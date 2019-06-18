@@ -28,9 +28,10 @@ const Layout = ({ children, pageInfo }) => (
       <>
         <Container fluid className="px-0 main">
           <Row noGutters className="justify-content-center">
-            <Col>
+            {/* COMMENTED AREA NOT IN USE */}
+            {/* <Col>
               <Header siteTitle={data.site.siteMetadata.title} />
-            </Col>
+            </Col> */}
           </Row>
           <Navbar pageInfo={pageInfo} />
           <Row noGutters>
