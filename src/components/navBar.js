@@ -3,10 +3,24 @@ import { Link } from "gatsby"
 
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap"
 
+import Image from '../images/pipe1.png'
+
 const CustomNavbar = ({ pageInfo }) => {
   console.log(pageInfo)
+  
   return (
     <>
+      <Link to="/" className="link-no-style">
+        <div className="d-flex flex-column justify-content container p-0" style={styles.container}> 
+          <div class="jumbotron jumbotron-fluid img-fluid" style={styles.jumbo}> 
+            <div class="container">
+              <h1 class="display-4">Fluid jumbotron</h1>
+              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+          </div>
+        </div>
+      </Link>
+
       <Navbar variant="dark" expand="lg" id="site-navbar">
         {/* <Container> */}
         <Link to="/" className="link-no-style">
@@ -39,5 +53,23 @@ const CustomNavbar = ({ pageInfo }) => {
     </>
   )
 }
+
+const styles ={
+  jumbo: {
+    backgroundImage: `url(${Image})`,
+    height: 300,
+    width: 1500,
+    
+    
+  },
+  container: {
+    backgroundColor: "#ffffff",
+    position: "relative",
+    minHeight: "100%",
+    height: 250,
+    width: 1500,
+    
+  }
+};
 
 export default CustomNavbar
