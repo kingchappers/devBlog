@@ -1,5 +1,5 @@
 import React from "react"
-import { Row, Col, Container, ListGroup } from "react-bootstrap"
+import { Row, Col, Container, ListGroup, Card } from "react-bootstrap"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,6 +8,25 @@ const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
     <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
     <Container className="text-center">
+      
+      <div className="d-flex flex-row justify-content-around">
+        <Card style={{width: '10rem'}}>
+          <Card.Body>
+            <Card.Title>Test Card</Card.Title>
+            <Card.Subtitle>test</Card.Subtitle>
+            <Card.Text>this is a test card</Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card style={{width: '20rem'}}>
+          <Card.Body>
+            <Card.Title>Test Card2</Card.Title>
+            <Card.Subtitle>test</Card.Subtitle>
+            <Card.Text>this is a test cardhhhhhhhhhhh</Card.Text>
+          </Card.Body>
+        </Card>
+      </div>
+
       <Row>
         <Col>
           <p>

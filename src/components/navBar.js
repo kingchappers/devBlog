@@ -1,8 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap"
-
 import Image from '../images/pipe1.png'
 
 const CustomNavbar = ({ pageInfo }) => {
@@ -10,45 +8,29 @@ const CustomNavbar = ({ pageInfo }) => {
   
   return (
     <>
-      <Link to="/" className="link-no-style">
+    <div className="justify-content container">     
         <div className="d-flex flex-column justify-content container p-0" style={styles.container}> 
-          <div class="jumbotron jumbotron-fluid img-fluid rounded-bottom" style={styles.jumbo}> 
-            <div class="container">
-              <h1 class="display-1 strong" style={styles.title} >Sam Chapman .Dev</h1>
+          <Link to="/" className="link-no-style">
+            <div className="jumbotron jumbotron-fluid img-fluid rounded-top" style={styles.jumbo}> 
+              <div className="container">
+                <h1 className="display-1 strong" style={styles.title} >Sam Chapman .Dev</h1>
+              </div>
             </div>
-          </div>
-        </div>
-      </Link>
-
-      <Navbar variant="dark" expand="lg" id="site-navbar" style={styles.navbar}>
-        {/* <Container> */}
-        <Link to="/" className="link-no-style">
-          <Navbar.Brand as="span">Gatsby React Bootstrap</Navbar.Brand>
-        </Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}>
-            <Link to="/page-2" className="link-no-style">
-              <Nav.Link as="span" eventKey="page-2">
-                Page 2
-              </Nav.Link>
-            </Link>
-          </Nav>
-          <Nav className="ml-auto">
-            <Form inline onSubmit={e => e.preventDefault()}>
-              <Form.Group>
-                <FormControl
-                  type="text"
-                  placeholder="Fake Search"
-                  className="mr-2"
-                />
-              </Form.Group>
-              <Button>Fake Button</Button>
-            </Form>
-          </Nav>
-        </Navbar.Collapse>
-        {/* </Container> */}
-      </Navbar>
+          </Link>
+          <nav className="navbar navbar-dark navbar-expand-md justify-content-center rounded-bottom" style={styles.navbar}>
+            <div className="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+              <ul className="navbar-nav mx-auto text-center">
+                <li className="nav-item nav-link" style={styles.title}>Tutorials</li>
+                <li className="nav-item nav-link" style={styles.title}>Projects</li>
+                <li className="nav-item nav-link" style={styles.title}>Contact</li>
+                <li className="nav-item nav-link" style={styles.title}>GitHub</li>
+              </ul>
+            </div>
+          </nav>
+          
+        </div>     
+      </div>
+      
     </>
   )
 }
@@ -64,7 +46,6 @@ const styles ={
     backgroundColor: "#ffffff",
     position: "relative",
     minHeight: "100%",
-    height: 250,
     width: 1500,
   },
 
@@ -73,7 +54,7 @@ const styles ={
   },
 
   navbar: {
-    backgroundColor: "#531A53"
+    backgroundColor: "#531A53",
   }
 };
 
