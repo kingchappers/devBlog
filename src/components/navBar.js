@@ -17,13 +17,15 @@ const CustomNavbar = ({ pageInfo }) => {
               </div>
             </div>
           </Link>
+
           <nav className="navbar navbar-dark navbar-expand-md justify-content-center rounded-bottom" style={styles.navbar}>
             <div className="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
               <ul className="navbar-nav mx-auto text-center">
-                <li className="nav-item nav-link" style={styles.title}>Tutorials</li>
-                <li className="nav-item nav-link" style={styles.title}>Projects</li>
-                <li className="nav-item nav-link" style={styles.title}>Contact</li>
-                <li className="nav-item nav-link" style={styles.title}>GitHub</li>
+                <li className="nav-item nav-link"><Link to="/" className="link-no-style" style={styles.title}>Home</Link></li>
+                <li className="nav-item nav-link"><Link to="/tutorials" className="link-no-style" style={styles.title}>Tutorials</Link></li>
+                <li className="nav-item nav-link"><Link to="/projects" className="link-no-style" style={styles.title}>Projects</Link></li>
+                <li className="nav-item nav-link"><Link to="/contact" className="link-no-style" style={styles.title}>Contact</Link></li>
+                <li className="nav-item nav-link"><a href="https://github.com/kingchappers" target="_blank" className="link-no-style" style={styles.title}>GitHub</a></li>
               </ul>
             </div>
           </nav>
@@ -51,6 +53,7 @@ const styles ={
 
   title: {
     color: "#f2f2f2",
+    marginRight: "5rem"
   },
 
   navbar: {
