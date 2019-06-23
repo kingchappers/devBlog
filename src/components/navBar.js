@@ -25,7 +25,7 @@ const CustomNavbar = ({ pageInfo }) => {
                 <li className="nav-item nav-link"><Link to="/tutorials" className="link-no-style" style={styles.title}>Tutorials</Link></li>
                 <li className="nav-item nav-link"><Link to="/projects" className="link-no-style" style={styles.title}>Projects</Link></li>
                 <li className="nav-item nav-link"><Link to="/contact" className="link-no-style" style={styles.title}>Contact</Link></li>
-                <li className="nav-item nav-link"><a href="https://github.com/kingchappers" target="_blank" className="link-no-style" style={styles.title}>GitHub</a></li>
+                <li className="nav-item nav-link"><a href="https://github.com/kingchappers" target="_blank" rel="noopener noreferrer" className="link-no-style" style={styles.title}>GitHub</a></li>
               </ul>
             </div>
           </nav>
