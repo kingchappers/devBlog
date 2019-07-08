@@ -29,8 +29,8 @@ const IndexPage = () => (
       <div className="d-flex flex-row justify-content-around">
         <Card style={{width: '20rem'}}>
           <Card.Body>
-            <Card.Title>GatsbyJS</Card.Title>
-            <Card.Text>GatsbyJS is the framework I've used for this site. I used the <a href="https://www.gatsbyjs.org/starters/jaxx2104/gatsby-starter-bootstrap/" target="_blank" rel="noopener noreferrer">gatsby-starter-bootstrap  </a> starter, it's a fairly basic starter that incorporates bootstrap. The starter was created by <a href="https://github.com/jaxx2104" target="_blank" rel="noopener noreferrer">jaxx2104</a> so they deserve credit.</Card.Text>
+            <Card.Title className="font-weight-bold">GatsbyJS</Card.Title>
+            <Card.Text className="text-left">GatsbyJS is the framework I've used for this site. I used the <a href="https://www.gatsbyjs.org/starters/jaxx2104/gatsby-starter-bootstrap/" target="_blank" rel="noopener noreferrer">gatsby-starter-bootstrap  </a> starter, it's a fairly basic starter that incorporates bootstrap. The starter was created by <a href="https://github.com/jaxx2104" target="_blank" rel="noopener noreferrer">jaxx2104</a> so they deserve credit.</Card.Text>
 
             <a className="nav-link mx-5" href="https://github.com/kingchappers/devBlog" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size='2x' color='black'/> <span className="sr-only"></span></a>
           </Card.Body>
@@ -38,7 +38,7 @@ const IndexPage = () => (
 
         <Card style={{width: '20rem'}}>
           <Card.Body>
-            <Card.Title>Project2</Card.Title>
+            <Card.Title className="font-weight-bold">Project2</Card.Title>
             <Card.Subtitle>test</Card.Subtitle>
             <Card.Text>this is a test card</Card.Text>
           </Card.Body>
