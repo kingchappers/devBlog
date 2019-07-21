@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
-    <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
+    <SEO title="tutorials" keywords={[`gatsby`, `react`, `bootstrap`]} />
     
     <Container className="text-center">
       <h2>Tutorials</h2>
@@ -19,15 +19,38 @@ const IndexPage = () => (
         As always if you have any questions about the content on this page feel free to get in touch. I'm no expert but I'll try to help.
       </p>
 
-      <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Work in Progress</h2>
       <div className="d-flex flex-row justify-content-around">
-        <Link to="/tutorials/xorgKeyboard" className="link-no-style" style={styles.cardLink}>
+        <Link to="/tutorials/xorgConfiguration" className="link-no-style" style={styles.cardLink}>
           <Card style={{width: '20rem'}}>
             <Card.Body>
-              <Card.Title className="font-weight-bold">Xorg Keyboard</Card.Title>
+              <Card.Title className="font-weight-bold">Xorg Config</Card.Title>
               <Card.Subtitle></Card.Subtitle>
               <Card.Text className="text-left">
-                This is a basic tutorial for configuring the Xorg display server to allow for the correct language.
+                This is small set of fairly basic tutorials regarding the setup of keyboards, monitors, and mice for the Xorg display server.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+      
+        <Link to="/tutorials/archTips" className="link-no-style" style={styles.cardLink}>
+          <Card style={{width: '20rem'}}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Arch Tips/Tricks</Card.Title>
+              <Card.Subtitle></Card.Subtitle>
+              <Card.Text className="text-left">
+                This is small set of fairly basic tutorials regarding different hints and tips you can use to configure a fresh installation of Arch, or some other lightweight distro.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+
+        <Link to="/tutorials/archTips" className="link-no-style" style={styles.cardLink}>
+          <Card style={{width: '20rem'}}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Add a New Disk to GRUB</Card.Title>
+              <Card.Subtitle></Card.Subtitle>
+              <Card.Text className="text-left">
+                This will show you how to add a partition on a separate drive. The tutorial looks at a Windows drive but it can be changed for any OS.
               </Card.Text>
             </Card.Body>
           </Card>
