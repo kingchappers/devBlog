@@ -6,36 +6,36 @@ title: "Arch Tips/Tricks"
 
 
 This is small set of fairly basic tutorials regarding different hints and tips you can use to configure a fresh installation of Arch, or some other lightweight distro.
-<br></br>
+<br/><br/>
 ##AUR Installations
 To install content from the Arch User Repository you need to edit the pacman.conf file.
 
-```bash
+```bash{numerLines: true}
 vim /etc/pacman.conf
 ```
 
 Then add the following lines to the bottom of the file:
 
-```vim
+```vim{numerLines: true}
 [archlinuxfr]
 SigLevel = Never
 Server = http://repo.archlinux.fr/$arch
 ```
-<br></br>
+<br/><br/>
 ##Install From Multilib
 To install packages from the multilib repository you need to edit pacman.conf again.
 
-```bash
+```bash{numerLines: true}
 vim /etc/pacman.conf
 ```
 
 Then uncomment (remove the #) the following lines
 
-```vim
+```vim{numerLines: true}
 #[multilib]
 #Include = /etc/pacman.d/mirrorlist
 ```
-<br></br>
+<br/><br/>
 ##During Arch Setup
 While installing Arch I found that there were a number of packages I repeatedly forgot to install during the process. These were all present on the installation media, but given Arch installs the bare minimum they were not installed during the process. When in the arch-chroot you create make sure you install:
 
