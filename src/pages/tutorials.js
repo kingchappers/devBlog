@@ -22,7 +22,7 @@ const IndexPage = () => (
       <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Linux Configuration</h2>
       <div className="d-flex flex-row justify-content-around">
         <Link to="/tutorials/xorgConfiguration" className="link-no-style" style={styles.cardLink}>
-          <Card style={{width: '20rem'}}>
+          <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Xorg Config</Card.Title>
               <Card.Subtitle></Card.Subtitle>
@@ -34,7 +34,7 @@ const IndexPage = () => (
         </Link>
       
         <Link to="/tutorials/archTips" className="link-no-style" style={styles.cardLink}>
-          <Card style={{width: '20rem'}}>
+          <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Arch Tips/Tricks</Card.Title>
               <Card.Subtitle></Card.Subtitle>
@@ -46,7 +46,7 @@ const IndexPage = () => (
         </Link>
 
         <Link to="/tutorials/addPartitionToGrub" className="link-no-style" style={styles.cardLink}>
-          <Card style={{width: '20rem'}}>
+          <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Add a New Disk to GRUB</Card.Title>
               <Card.Subtitle></Card.Subtitle>
@@ -58,6 +58,20 @@ const IndexPage = () => (
         </Link>
       </div>
 
+      <div className="d-flex flex-row justify-content-around">
+        <Link to="/tutorials/displaysvrAndDisplaymgr" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Install Display Server and Display Manager</Card.Title>
+              <Card.Subtitle></Card.Subtitle>
+              <Card.Text className="text-left">
+                This will show you how to install a display server and display manager on lightweight distros. 
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+      </div>      
+
     </Container>
   </Layout>
 )
@@ -65,6 +79,11 @@ const IndexPage = () => (
 const styles ={
   cardLink: {
     color: "#000000",
+  },
+  cardSize: {
+    width: '20rem',
+    height: '15rem',
+    margin: '1rem',
   },
 
 };
