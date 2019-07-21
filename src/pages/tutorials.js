@@ -82,7 +82,7 @@ const styles ={
   },
   cardSize: {
     width: '20rem',
-    height: '15rem',
+    height: '12rem',
     margin: '1rem',
   },
 

@@ -44,3 +44,15 @@ While installing Arch I found that there were a number of packages I repeatedly 
 3. netctl - Tool that allows you to create and manage network profiles.
 4. dialog - Allows you to use the wifi-menu set of commands, this is useful for easily connecting to available WiFi hotspots.
 5. gvim - A version of vim that connects to the clipboard and provides GTK/GTX support. This is really just a QOL installation if you prefer standard vim.
+
+##Auto-Connect to WiFi
+To automatically connect to WiFi you need to have a netctl profile created. The easiest way to do this is via *wifi-menu*. Run the following:
+```bash
+wifi-menu
+```
+You'll be presented with a screen listing the available WiFi hotspots. Select the one you would like and sign in. You'll then be able to enter in a name for the profile, make sure you enter something that identifies the hotspot and you will remember.
+
+Now enter the following command:
+```bash
+netctl enable <profile_name>
+```
