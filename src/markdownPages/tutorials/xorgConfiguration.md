@@ -89,3 +89,5 @@ EndSection
 ```
 
 The file is fairly self explanatory, just ensure you select the correct port you want as your primary and where you would like to be in respect of that.
+
+**N.B. There must be separate sections for each monitor**
