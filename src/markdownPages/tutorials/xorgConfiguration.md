@@ -44,6 +44,20 @@ ls /usr/share/X11/xkb/symbols/
 That's everything you need for a basic configuration of a keyboard.
 <br/><br/>
 ##Xorg Mouse
+A mouse is fairly similar to a keyboard in terms of the xorg configuration. 
+```bash
+vim /etc/X11/xorg.conf.d/10-mouse.conf
+```
+Add these lines to the new file:
+```vim
+Section "InputClass"
+	Identifier "evdev pointer tweaked catchall"
+	MatchIsPointer "on"
+	Driver "evdev"
+	Option "AccelSpeed" ".75"
+EndSection
+```
+The mouse section uses something called *AccelSpeed*. This is used to set the speed your cursor moves on the screen.
 <br/><br/>
 ##Xorg Monitors
 This section is only relevant where you are using multiple monitors and need to configure which monitor is on which side. The first part for this is to actually work out the identifier associated with each monitor. Enter the below command:
