@@ -19,7 +19,7 @@ const IndexPage = () => (
         As always if you have any questions about the content on this page feel free to get in touch. I'm no expert but I'll try to help.
       </p>
 
-      <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Linux Configuration</h2>
+      <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Linux Configuration/Tools</h2>
       <div className="d-flex flex-row justify-content-around">
         <Link to="/tutorials/xorgConfiguration" className="link-no-style" style={styles.cardLink}>
           <Card style={styles.cardSize}>
@@ -66,6 +66,18 @@ const IndexPage = () => (
               <Card.Subtitle></Card.Subtitle>
               <Card.Text className="text-left">
                 This will show you how to install a display server and display manager on lightweight distros. 
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+
+        <Link to="/tutorials/mountConfigFormatDrive" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Mounting, Configuring and Formatting Drives</Card.Title>
+              <Card.Subtitle></Card.Subtitle>
+              <Card.Text className="text-left">
+                This will show you how to mount configure and format drives in Linux.
               </Card.Text>
             </Card.Body>
           </Card>
