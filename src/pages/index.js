@@ -38,9 +38,10 @@ const IndexPage = () => (
 
         <Card style={{width: '20rem'}}>
           <Card.Body>
-            <Card.Title className="font-weight-bold">Project2</Card.Title>
-            <Card.Subtitle>test</Card.Subtitle>
-            <Card.Text>this is a test card</Card.Text>
+            <Card.Title className="font-weight-bold">rEFInd Theme - DM-Outrun</Card.Title>
+            <Card.Text className="text-left">rEFInd is a boot manager available for systems using UEFI. I created a theme for the loader based on <a href="https://github.com/mustaqimM/dm" target="_blank" rel="noopener noreferrer">mustaqimM's DM</a> theme. All I've really done to the theme is made it a little more Outrun.</Card.Text>
+
+            <a className="nav-link mx-5" href="https://github.com/kingchappers/dm-outrun" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size='2x' color='black'/> <span className="sr-only"></span></a>
           </Card.Body>
         </Card>
       </div>
