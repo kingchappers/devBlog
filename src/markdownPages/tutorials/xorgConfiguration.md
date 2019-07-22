@@ -46,18 +46,32 @@ That's everything you need for a basic configuration of a keyboard.
 ##Xorg Mouse
 <br/><br/>
 ##Xorg Monitors
+This section is only relevant where you are using multiple monitors and need to configure which monitor is on which side. The first part for this is to actually work out the identifier associated with each monitor. Enter the below command:
 
-```javascript{numberLines: 5}
-// In your gatsby-config.js
-plugins: [
-  {
-// highlight-next-line
-    resolve: `gatsby-transformer-remark`,
-    options: {
-      plugins: [
-        `gatsby-remark-prismjs`,
-      ]
-    }
-  }
-]
+```bash
+xrandr
 ```
+
+This will output names for each of the ports available on your device. All those connected to a monitor will show as connected, the rest will show as disconnected. The ones that are connected for me are labeled *HDMI-1* and *DP-1*. Take note of yours as you will need to edit the configuration based on this.
+
+Next step is to configure your monitors via the xorg.conf.d files.
+
+```bash
+vim /etc/X11/xorg.conf.d/20-monitor.conf
+```
+
+In the new file add these lines:
+
+```vim
+Section "Monitor"
+    Identifier  "HDMI-1"
+    Option      "Primary" "true"
+EndSection
+
+Section "Monitor"
+    Identifier  "DP-1"
+    Option      "RightOf" "HDMI-1"
+EndSection
+```
+
+The file is fairly self explanatory, just ensure you select the correct port you want as your primary and where you would like to be in respect of that.
