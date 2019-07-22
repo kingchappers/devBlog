@@ -91,3 +91,15 @@ EndSection
 The file is fairly self explanatory, just ensure you select the correct port you want as your primary and where you would like to be in respect of that.
 
 **N.B. There must be separate sections for each monitor**
+
+If you would like to stop the screen going blank simply add the below to the bottom of the *20-monitor.conf* file:
+
+```vim
+Section "ServerLayout"
+    Identifier "ServerLayout0"
+    Option "StandbyTime" "0"
+    Option "SuspendTime" "0"
+    Option "OffTime"     "0"
+    Option "BlankTime"   "0"
+EndSection
+```
