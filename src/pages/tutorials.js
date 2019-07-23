@@ -94,7 +94,33 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </Link>
-      </div>      
+      </div>
+
+      <div className="d-flex flex-row justify-content-around">
+        <Link to="/tutorials/miscLinux" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Miscellaneous Linux Tips</Card.Title>
+              <Card.Subtitle></Card.Subtitle>
+              <Card.Text className="text-left">
+                Some tips for Linux that didn't really fit anywhere else.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+
+        <Link to="/tutorials/secureConnect" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Secure connections to SSH hosts</Card.Title>
+              <Card.Subtitle></Card.Subtitle>
+              <Card.Text className="text-left">
+                This will show you the basics of securely connecting to hosts via SSH.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+        </div>      
 
     </Container>
   </Layout>
