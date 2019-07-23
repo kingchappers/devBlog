@@ -91,3 +91,9 @@ scp <username>@<ip_or_domain_name>:/home/<username>/foo.txt ./bar.txt
 1. *\<username>\@\<ip_or_domain_name>* - This is the user and location of the host you are copying from.
 2. *:/home/\<username>/foo.txt* - This is the directory you are copying the file from.
 3. *./bar.txt* - This is the location you are copying the file to on your device.
+
+####Specify Port
+To specify the port on to send the file over and send a whole directory:
+```bash
+scp -P <port_number> -r <directory_location> <username>@<ip_or_domain_name>:/home/<username>/
+```
