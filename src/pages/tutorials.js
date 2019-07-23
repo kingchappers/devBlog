@@ -82,6 +82,18 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </Link>
+
+        <Link to="/tutorials/networking" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Networking Tools</Card.Title>
+              <Card.Subtitle></Card.Subtitle>
+              <Card.Text className="text-left">
+                This will show you how to use some of the networking tools in Linux, such as ip and netctl.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
       </div>      
 
     </Container>
