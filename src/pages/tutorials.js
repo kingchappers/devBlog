@@ -112,7 +112,7 @@ const IndexPage = () => (
         <Link to="/tutorials/secureConnect" className="link-no-style" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
-              <Card.Title className="font-weight-bold">Secure connections to SSH hosts</Card.Title>
+              <Card.Title className="font-weight-bold">Secure Connections Hosts via SSH</Card.Title>
               <Card.Subtitle></Card.Subtitle>
               <Card.Text className="text-left">
                 This will show you the basics of securely connecting to hosts via SSH.
