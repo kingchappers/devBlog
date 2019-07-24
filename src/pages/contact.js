@@ -11,8 +11,8 @@ const IndexPage = () => (
       <h2>Contact</h2>
 
       <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Work in Progress</h2>
-      <div className="d-flex flex-row justify-content-around">
-        <Card style={{width: '20rem'}}>
+      <div className="card-columns">
+        <Card style={styles.cardSize}>
           <Card.Body>
             <Card.Title>Test Card</Card.Title>
             <Card.Subtitle>test</Card.Subtitle>
@@ -24,5 +24,14 @@ const IndexPage = () => (
     </Container>
   </Layout>
 )
+
+const styles ={
+  cardSize: {
+    maxWidth: '20rem',
+    //height: '12rem',
+    margin: '1rem',
+  },
+
+};
 
 export default IndexPage

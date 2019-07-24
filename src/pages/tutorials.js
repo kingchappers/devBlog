@@ -20,7 +20,7 @@ const IndexPage = () => (
       </p>
 
       <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Linux Configuration/Tools</h2>
-      <div className="d-flex flex-row justify-content-around">
+      <div className="card-columns">
         <Link to="/tutorials/xorgConfiguration" className="link-no-style" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
@@ -56,9 +56,7 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </Link>
-      </div>
-
-      <div className="d-flex flex-row justify-content-around">
+      
         <Link to="/tutorials/displaysvrAndDisplaymgr" className="link-no-style" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
@@ -94,9 +92,7 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </Link>
-      </div>
-
-      <div className="d-flex flex-row justify-content-around">
+      
         <Link to="/tutorials/miscLinux" className="link-no-style" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
@@ -120,7 +116,7 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </Link>
-        </div>      
+      </div>      
 
     </Container>
   </Layout>
@@ -131,8 +127,8 @@ const styles ={
     color: "#000000",
   },
   cardSize: {
-    width: '20rem',
-    height: '12rem',
+    maxWidth: '20rem',
+    //height: '12rem',
     margin: '1rem',
   },
 
