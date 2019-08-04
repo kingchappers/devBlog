@@ -19,7 +19,70 @@ const IndexPage = () => (
         As always if you have any questions about the content on this page feel free to get in touch. I'm no expert but I'll try to help.
       </p>
 
-      <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Linux Configuration/Tools</h2>
+      <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Linux Tools</h2>
+      <div className="card-columns">
+        <Link to="/tutorials/miscLinux" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Miscellaneous Linux Tools</Card.Title>
+              <Card.Subtitle></Card.Subtitle>
+              <Card.Text className="text-left">
+                Some tips for Linux that didn't really fit anywhere else.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+
+        <Link to="/tutorials/networking" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Networking Tools</Card.Title>
+              <Card.Subtitle></Card.Subtitle>
+              <Card.Text className="text-left">
+                This will show you how to use some of the networking tools in Linux, such as ip and netctl.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+
+        <Link to="/tutorials/textManipulation" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Text Manipulation</Card.Title>
+              <Card.Subtitle></Card.Subtitle>
+              <Card.Text className="text-left">
+                This will show you to manipulate text using the tr command.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+
+        <Link to="/tutorials/mountConfigFormatDrive" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Mounting, Configuring and Formatting Drives</Card.Title>
+              <Card.Subtitle></Card.Subtitle>
+              <Card.Text className="text-left">
+                This will show you how to mount configure and format drives in Linux.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>        
+
+        <Link to="/tutorials/secureConnect" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Secure Connections Hosts via SSH</Card.Title>
+              <Card.Subtitle></Card.Subtitle>
+              <Card.Text className="text-left">
+                This will show you the basics of securely connecting to hosts via SSH.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+      </div>
+
+      <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Linux Configuration</h2>
       <div className="card-columns">
         <Link to="/tutorials/xorgConfiguration" className="link-no-style" style={styles.cardLink}>
           <Card style={styles.cardSize}>
@@ -69,65 +132,9 @@ const IndexPage = () => (
           </Card>
         </Link>
 
-        <Link to="/tutorials/mountConfigFormatDrive" className="link-no-style" style={styles.cardLink}>
-          <Card style={styles.cardSize}>
-            <Card.Body>
-              <Card.Title className="font-weight-bold">Mounting, Configuring and Formatting Drives</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
-              <Card.Text className="text-left">
-                This will show you how to mount configure and format drives in Linux.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Link>
+        
 
-        <Link to="/tutorials/networking" className="link-no-style" style={styles.cardLink}>
-          <Card style={styles.cardSize}>
-            <Card.Body>
-              <Card.Title className="font-weight-bold">Networking Tools</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
-              <Card.Text className="text-left">
-                This will show you how to use some of the networking tools in Linux, such as ip and netctl.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Link>
-      
-        <Link to="/tutorials/miscLinux" className="link-no-style" style={styles.cardLink}>
-          <Card style={styles.cardSize}>
-            <Card.Body>
-              <Card.Title className="font-weight-bold">Miscellaneous Linux Tips</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
-              <Card.Text className="text-left">
-                Some tips for Linux that didn't really fit anywhere else.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Link>
-
-        <Link to="/tutorials/secureConnect" className="link-no-style" style={styles.cardLink}>
-          <Card style={styles.cardSize}>
-            <Card.Body>
-              <Card.Title className="font-weight-bold">Secure Connections Hosts via SSH</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
-              <Card.Text className="text-left">
-                This will show you the basics of securely connecting to hosts via SSH.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Link>
-
-        <Link to="/tutorials/textManipulation" className="link-no-style" style={styles.cardLink}>
-          <Card style={styles.cardSize}>
-            <Card.Body>
-              <Card.Title className="font-weight-bold">Text Manipulation</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
-              <Card.Text className="text-left">
-                This will show you to manipulate text using the tr command.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Link>
+        
       </div>      
 
     </Container>
