@@ -26,7 +26,7 @@ mkfs.ext4 /dev/<partition_name> -L <partition_label>
 ```
 * *mkfs.ext4* - This creates a ext4 filesystem. There are other options, see [here](https://www.systutorials.com/docs/linux/man/8-mkfs/).
 * */dev/<partion_name>* - This is the partition you are creating the filesystem on.
-* *-L <partition_label> - This is where you can give it a label that you will recognise when you look at the drive again.
+* *-L <partition_label>* - This is where you can give it a label that you will recognise when you look at the drive again.
 <br/><br/>
 ##Own a Drive
 Now that you have created a drive you may want to change the ownership to your user; this will be dependant on the intended use for the drive of course. To do this use either of the below commands:
