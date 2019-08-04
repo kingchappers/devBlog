@@ -25,7 +25,6 @@ const IndexPage = () => (
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Miscellaneous Linux Tools</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
               <Card.Text className="text-left">
                 Some tips for Linux that didn't really fit anywhere else.
               </Card.Text>
@@ -37,7 +36,6 @@ const IndexPage = () => (
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Networking Tools</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
               <Card.Text className="text-left">
                 This will show you how to use some of the networking tools in Linux, such as ip and netctl.
               </Card.Text>
@@ -49,7 +47,6 @@ const IndexPage = () => (
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Text Manipulation</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
               <Card.Text className="text-left">
                 This will show you to manipulate text using the tr command.
               </Card.Text>
@@ -61,7 +58,6 @@ const IndexPage = () => (
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Mounting, Configuring and Formatting Drives</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
               <Card.Text className="text-left">
                 This will show you how to mount configure and format drives in Linux.
               </Card.Text>
@@ -73,9 +69,19 @@ const IndexPage = () => (
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Secure Connections Hosts via SSH</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
               <Card.Text className="text-left">
                 This will show you the basics of securely connecting to hosts via SSH.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+
+        <Link to="/tutorials/find" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Find Command</Card.Title>
+              <Card.Text className="text-left">
+                This is a basic guide to the find command. This is a useful utility for finding files in Linux.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -88,7 +94,6 @@ const IndexPage = () => (
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Xorg Config</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
               <Card.Text className="text-left">
                 This is small set of fairly basic tutorials regarding the setup of keyboards, monitors, and mice for the Xorg display server.
               </Card.Text>
@@ -100,7 +105,6 @@ const IndexPage = () => (
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Arch Tips/Tricks</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
               <Card.Text className="text-left">
                 This is small set of fairly basic tutorials regarding different hints and tips you can use to configure a fresh installation of Arch, or some other lightweight distro.
               </Card.Text>
@@ -112,7 +116,6 @@ const IndexPage = () => (
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Add a New Disk to GRUB</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
               <Card.Text className="text-left">
                 This will show you how to add a partition on a separate drive. The tutorial looks at a Windows drive but it can be changed for any OS.
               </Card.Text>
@@ -124,17 +127,12 @@ const IndexPage = () => (
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Install Display Server and Display Manager</Card.Title>
-              <Card.Subtitle></Card.Subtitle>
               <Card.Text className="text-left">
                 This will show you how to install a display server and display manager on lightweight distros. 
               </Card.Text>
             </Card.Body>
           </Card>
         </Link>
-
-        
-
-        
       </div>      
 
     </Container>
