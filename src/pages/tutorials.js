@@ -86,6 +86,17 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </Link>
+
+        <Link to="/tutorials/sift" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">SIFT Forensic Linux Distro</Card.Title>
+              <Card.Text className="text-left">
+                This is more informational than a tutorial. SIFT is a Linux distribution that contains a number of useful forensic tools.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
       </div>
 
       <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Linux Configuration</h2>
