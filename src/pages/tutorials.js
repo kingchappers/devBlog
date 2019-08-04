@@ -19,6 +19,20 @@ const IndexPage = () => (
         As always if you have any questions about the content on this page feel free to get in touch. I'm no expert but I'll try to help.
       </p>
 
+      <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Security & Pen Test Tools</h2>
+      <div className="card-columns">
+        <Link to="/tutorials/hydra" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Hydra</Card.Title>
+              <Card.Text className="text-left">
+                Hydra is a tool used for brute forcing passwords. Please do not use this tool for anything other than testing, or where you have explicit permission to do so.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+      </div>
+
       <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Linux Tools</h2>
       <div className="card-columns">
         <Link to="/tutorials/miscLinux" className="link-no-style" style={styles.cardLink}>
