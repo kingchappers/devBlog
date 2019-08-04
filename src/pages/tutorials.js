@@ -116,6 +116,18 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </Link>
+
+        <Link to="/tutorials/textManipulation" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Text Manipulation</Card.Title>
+              <Card.Subtitle></Card.Subtitle>
+              <Card.Text className="text-left">
+                This will show you to manipulate text using the tr command.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
       </div>      
 
     </Container>
