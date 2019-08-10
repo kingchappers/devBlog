@@ -54,6 +54,17 @@ const IndexPage = () => (
           </Card>
         </Link>
 
+        <Link to="/tutorials/snort" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Snort</Card.Title>
+              <Card.Text className="text-left">
+                Snort is a tool used for Security Information and Event Management (SIEM). This tutorial will cover the basics of snort rules.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+
       </div>
 
       <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Linux Tools</h2>
