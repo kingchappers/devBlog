@@ -18,8 +18,8 @@ The username must be a user on the device you are connecting to.
 If the device is not using the standard port of 22:
 ```bash
 ssh -p <port_number> <username>@<ip_or_domain_name>
-<br/><br/>
 ```
+<br/><br/>
 
 ####Creating and Using SSH Keys
 Using SSH keys is generally better than a password for authentication. This is because a key is longer and more complex than a memorable password. You are also able to set passphrases on keys to add an extra layer of security if the key is stolen somehow.
