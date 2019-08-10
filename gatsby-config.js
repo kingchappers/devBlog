@@ -1,9 +1,9 @@
 module.exports = {
   pathPrefix: "/gatsby-react-bootstrap-starter",
   siteMetadata: {
-    title: `Gatsby React Bootstrap Starter`,
-    description: `A starter that includes react-bootstrap and react-icons, along with SASS compilation.`,
-    author: `Billy Jacoby`,
+    title: `SamChapman.dev`,
+    description: `A site built from the gatsby-bootstrap starter`,
+    author: `Sam Chapman`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,6 +35,13 @@ module.exports = {
         path: `${__dirname}/src/markdownPages`,
       },
     },
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          name: 'pages',
+          path: `${__dirname}/src/pages`,
+        },
+      },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -91,6 +98,14 @@ module.exports = {
                   },
                 },
               ],
+            },
+          },
+          //The below allows you to add images to markdown files
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+              linkImagesToOriginal: true
             },
           },
         ],
