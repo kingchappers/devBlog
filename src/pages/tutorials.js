@@ -65,6 +65,16 @@ const IndexPage = () => (
           </Card>
         </Link>
 
+        <Link to="/tutorials/bashExpect" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Bash Expect</Card.Title>
+              <Card.Text className="text-left">
+                Bash expect is a useful tool to automate shell scripts, in this tutorial I'll show you how to use the command to provide passwords to the SSH command.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link> 
       </div>
 
       <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Linux Tools</h2>
@@ -192,7 +202,7 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </Link>
-      </div>      
+      </div>    
 
     </Container>
   </Layout>
