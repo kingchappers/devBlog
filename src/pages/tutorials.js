@@ -155,6 +155,17 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </Link>
+
+        <Link to="/tutorials/screen" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Screen Command</Card.Title>
+              <Card.Text className="text-left">
+                This is a simple tutorial regarding the use of the Screen command. Screen is useful where you are using distributions that do not have a GUI. You can use the command to have multiple terminal sessions at once.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
       </div>
 
       <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Linux Configuration</h2>
