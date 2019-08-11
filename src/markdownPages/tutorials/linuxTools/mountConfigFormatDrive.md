@@ -28,6 +28,7 @@ mkfs.ext4 /dev/<partition_name> -L <partition_label>
 * */dev/<partion_name>* - This is the partition you are creating the filesystem on.
 * *-L <partition_label>* - This is where you can give it a label that you will recognise when you look at the drive again.
 <br/><br/>
+
 ##Own a Drive
 Now that you have created a drive you may want to change the ownership to your user; this will be dependant on the intended use for the drive of course. To do this use either of the below commands:
 
@@ -39,3 +40,9 @@ chown sam:<usergroup> /run/media/<current_user>/<partition_label>
 chown sam: /run/media/<current_user>/<partition_label>
 ```
 **N.B. The second is only appropriate where you want the default user group of the user to own the drive**
+<br/><br/>
+##Write Zero's to a Drive
+To write 0s to a drive you'll need the dd command. After you have that use the following command:
+```
+dd if=/dev/zero of=/dev/sdb1 status=progress
+```
