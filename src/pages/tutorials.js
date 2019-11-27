@@ -241,6 +241,23 @@ const IndexPage = () => (
         </Link>
       </div>
 
+      <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Windows Tools</h2>
+      <div className="card-columns">
+       
+        <Link to="/tutorials/powershell" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">PowerShell</Card.Title>
+              <Card.Text className="text-left">
+                This will give you an overview of some useful PowerShell commands.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+      </div>
+
+      
+
     </Container>
   </Layout>
 )
