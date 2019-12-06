@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Card } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -26,14 +26,5 @@ const IndexPage = () => (
     </Container>
   </Layout>
 )
-
-const styles ={
-  cardSize: {
-    maxWidth: '20rem',
-    //height: '12rem',
-    margin: '1rem',
-  },
-
-};
 
 export default IndexPage

@@ -250,6 +250,17 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </Link>
+
+        <Link to="/tutorials/nslookup" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">nslookup</Card.Title>
+              <Card.Text className="text-left">
+                This will give you an overview of the nslookup tool and how to use it.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
       </div>
 
       <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Windows Tools</h2>
