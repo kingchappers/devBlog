@@ -75,6 +75,17 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </Link> 
+
+        <Link to="/tutorials/htTrack" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">HTTrack</Card.Title>
+              <Card.Text className="text-left">
+                HTTrack is a useful tool used for mirroring websites
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link> 
       </div>
 
       <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Linux Tools</h2>
