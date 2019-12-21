@@ -8,8 +8,9 @@ This will give you an overview of some useful PowerShell commands.
 
 Most of these commands are fairly simple but give you an idea of some of the things you can do in PowerShell.
 
-###Active Directory Commands
+##Active Directory Commands
 
+####AD Computer
 ```powershell
 Get-ADComputer 
 ```
@@ -27,26 +28,31 @@ Get-ADComputer <myComputer> -properties MemberOf
 ```
 * This gets the AD computer and returns all groups a computer is a member of.
 
+####AD User
 ```powershell
 Get-ADGroup
 ```
 * This works in the same way as the *Get-ADComputer* command, but retrieves computer information.
 
+####Exporting to CSV
 ```powershell
 Export-Csv -Path <myPath.csv>
 ```
 * This will export output to a .csv file.
 
+####Using the Pipe (|)
 ```powershell
 Get-ADComputer -Filter 'AdminCount -eq 1' | Export-Csv -Path ./adminComputers.csv
 ```
 * This saves the output of the command before the pipe to a .csv file to the specified location.
 
+#####Export Group Policy
 ```powershell
 gpresult /H GPReport.html
 ```
 * This exports an .html file detailing all of the current GPOs that apply to the current device.
 
+####AD Group Commands
 ```powershell
 Get-ADPrincipalGroupMembership
 ```
@@ -62,6 +68,7 @@ Get-ADGroupMember -Identity "<myGroup>"
 ```
 * Gets all members of the specified AD group.
 
+####Logical Operators
 ```powershell
 Get-ADUser -Filter 'AdminCount -eq 1 -and msExchRecipientTypeDetails -ne 0' -properties msExchRecipientTypeDetails 
 ```
