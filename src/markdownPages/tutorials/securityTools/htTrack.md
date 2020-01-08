@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/htTrack"
+path: "/tutorials/securitypentesttools/htTrack"
 date: "2019-12-08"
 title: "HTTrack"
 ---

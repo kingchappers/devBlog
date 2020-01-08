@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/secureConnect"
+path: "/tutorials/linuxTools/secureConnect"
 date: "2019-07-23"
 title: "Secure Connections Hosts via SSH"
 ---

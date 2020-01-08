@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/packetAnalysis"
+path: "/tutorials/securitypentesttools/packetAnalysis"
 date: "2019-08-06"
 title: "Packet Analysis Tools"
 ---

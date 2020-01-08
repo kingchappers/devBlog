@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/screen"
+path: "/tutorials/linuxTools/screen"
 date: "2019-08-11"
 title: "Screen Command"
 ---

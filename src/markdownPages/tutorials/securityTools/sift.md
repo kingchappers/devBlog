@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/sift"
+path: "/tutorials/securitypentesttools/sift"
 date: "2019-08-04"
 title: "SIFT Linux Distribution"
 ---

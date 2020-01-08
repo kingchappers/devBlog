@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/maltego"
+path: "/tutorials/securitypentesttools/maltego"
 date: "2019-12-21"
 title: "Maltego"
 ---

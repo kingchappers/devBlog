@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/addPartitionToGrub"
+path: "/tutorials/linuxConfiguration/addPartitionToGrub"
 date: "2019-07-21"
 title: "Add Partition"
 ---

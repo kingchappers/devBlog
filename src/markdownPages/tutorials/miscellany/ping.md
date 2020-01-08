@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/ping"
+path: "/tutorials/miscellany/ping"
 date: "2019-12-06"
 title: "Ping"
 ---

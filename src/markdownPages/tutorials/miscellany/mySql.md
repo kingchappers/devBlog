@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/mySql"
+path: "/tutorials/miscellany/mySql"
 date: "2019-08-11"
 title: "MySQL"
 ---

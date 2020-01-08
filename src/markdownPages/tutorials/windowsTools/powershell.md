@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/powershell"
+path: "/tutorials/windowsTools/powershell"
 date: "2019-11-27"
 title: "PowerShell"
 ---

@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/docker"
+path: "/tutorials/miscellany/docker"
 date: "2019-08-11"
 title: "Docker"
 ---

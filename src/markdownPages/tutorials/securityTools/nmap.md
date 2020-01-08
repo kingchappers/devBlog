@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/nmap"
+path: "/tutorials/securitypentesttools/nmap"
 date: "2019-08-05"
 title: "NMap"
 ---

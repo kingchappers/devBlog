@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/mountConfigFormatDrive"
+path: "/tutorials/linuxTools/mountConfigFormatDrive"
 date: "2019-07-22"
 title: "Mounting, Configuring and Formatting Drives"
 ---

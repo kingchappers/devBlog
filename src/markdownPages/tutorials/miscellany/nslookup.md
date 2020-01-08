@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/nslookup"
+path: "/tutorials/miscellany/nslookup"
 date: "2019-12-06"
 title: "nslookup"
 ---

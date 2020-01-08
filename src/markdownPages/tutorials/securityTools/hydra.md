@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/hydra"
+path: "/tutorials/securitypentesttools/hydra"
 date: "2019-08-04"
 title: "Hydra"
 ---

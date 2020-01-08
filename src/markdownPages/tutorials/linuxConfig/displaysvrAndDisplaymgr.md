@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/displaysvrAndDisplaymgr"
+path: "/tutorials/linuxConfiguration/displaysvrAndDisplaymgr"
 date: "2019-07-20"
 title: "Display Server Installation and Display Manager Configuration"
 ---

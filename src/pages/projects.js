@@ -8,8 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const IndexPage = () => (
-  <Layout pageInfo={{ pageName: "index" }}>
-    <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
+  <Layout pageInfo={{ pageName: "Projects" }}>
+    <SEO title="Projects" keywords={[`gatsby`, `react`, `bootstrap`]} />
     <Container className="text-center">
       <h2>Projects</h2>
 

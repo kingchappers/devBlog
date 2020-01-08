@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/archTips"
+path: "/tutorials/linuxConfiguration/archTips"
 date: "2019-07-21"
 title: "Arch Tips/Tricks"
 ---

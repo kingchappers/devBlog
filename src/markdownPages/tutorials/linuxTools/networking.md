@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/networking"
+path: "/tutorials/linuxTools/networking"
 date: "2019-07-22"
 title: "Networking Tools"
 ---

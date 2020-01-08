@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/snort"
+path: "/tutorials/securitypentesttools/snort"
 date: "2019-08-10"
 title: "Snort"
 ---

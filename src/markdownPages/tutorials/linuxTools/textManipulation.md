@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/textManipulation"
+path: "/tutorials/linuxTools/textManipulation"
 date: "2019-08-04"
 title: "Text Manipulation"
 ---
