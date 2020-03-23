@@ -73,3 +73,20 @@ Get-ADGroupMember -Identity "<myGroup>"
 Get-ADUser -Filter 'AdminCount -eq 1 -and msExchRecipientTypeDetails -ne 0' -properties msExchRecipientTypeDetails 
 ```
 * This command shows how you might utilise the logical **and** and logical **not equal to** operators.
+
+####Basic Script
+```powershell
+$gpos = Get-Gpo -All -Domain "myDomain"
+
+foreach ($gpo in $gpos) {
+	$permissions = get-gppermission -Guid $gpo.Id -All
+	
+	foreach ($permission in $permissions){
+		$gpoPermissions += $permission.Trustee.Name + ',', $permission.Permission + ',', $gpo.id + ',', $gpo.DisplayName + "`r`n"
+	}
+}
+$gpoPermissions | Set-Content -Path ./gpoPermissions.txt
+```
+* This script will get all GPOs in a domain. Then it loops over those to get the users that have permisssions over the GPOs. Finally it outputs the results to a file.
+
+This is a fairly basic script but highlights the use of variables and foreach loops.
