@@ -74,7 +74,7 @@ Get-ADUser -Filter 'AdminCount -eq 1 -and msExchRecipientTypeDetails -ne 0' -pro
 ```
 * This command shows how you might utilise the logical **and** and logical **not equal to** operators.
 
-####Basic Script
+####Basic Scripts
 ```powershell
 $gpos = Get-Gpo -All -Domain "myDomain"
 
@@ -89,4 +89,15 @@ $gpoPermissions | Set-Content -Path ./gpoPermissions.txt
 ```
 * This script will get all GPOs in a domain. Then it loops over those to get the users that have permisssions over the GPOs. Finally it outputs the results to a file.
 
-This is a fairly basic script but highlights the use of variables and foreach loops.
+* It's fairly basic but highlights the use of variables and foreach loops.
+
+```powershell
+$serverNames = Get-Content ./azureServerNames.csv
+
+foreach ($serverName in $serverNames) {
+		$spn = setspn -l $serverName.Trim()
+		$spn | Set-Content -Path ./$serverName.txt
+}
+```
+
+* This ones fairly niche script but I found it quite useful. It essentially shows how to read data from a *.csv* file, manipulate it and output what you have to a .txt file with the variable as the filename.
