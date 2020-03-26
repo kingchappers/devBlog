@@ -16,4 +16,4 @@ title: "TheHarvester"
  theHarvester -d <my.Domain> -l 500 -b all -f harvestedInfo
  ```
 
- This will output a file containing the information that TheHarvester gathered in a easy to read format that can be opened in a web browser. 
+ This will output a file containing the information that TheHarvester gathered in an SQLite file. This makes reading the outputs fairly easy. 
