@@ -46,13 +46,20 @@ nmap -sT -v -p- --script=banner <ipaddress>
 ```
 This one will scan all ports and identifies anything printed by a service, this is quite a common thing for services to do. This scan can help you understand more about a network during the enumeration phase.
 <br/><br/>
-####Extra NMap Options
+####Other NMap Options
 Some extra arguments you can use for nmap:
 * *oG* - This will give you an output you can use *grep* on.
 * *-p* - This allows you to scan specific ports.
 * *--osscan-limit* - This limits an OS scan to specific targets.
 * *osscan-guess* - This is an aggressive form of OS scan.
-* *-O* This is a regular OS scan and is required prior to added the two scans above.
+* *-O* - This is a regular OS scan and is required prior to the two scans above.
+* *-sN* - This is a Null scan. This will send TCP frames to the host without a flag set.
+* *-sT* - This specifies a TCP connect scan. This attempts to connect to a host by establishing a *'normal'* TCP connection.
+* *-sS* - This is a TCP SYN scan. This is the default scan type when an option is not specified and will send SYN packets, without opening a full connection. This is often referred to as a *'half open'* scan. This technique tends to be very quick as you're not relying on connections to be fully established before scanning the next port/host.
+* *-sU* - This is a UDP scan. This is useful for scanning targets that may have services utilising UDP, such as DNS or DHCP.
+* *-sA* - This defines and ACK scan, where this flag is set in the packet.
+* *-sX* - This initiates an Xmas scan. This sets the FIN, PSH, and URG flags in the packet. This style of scan, and some others, are useful if you need to get through a non-stateful firewall.
+* *-T4* - This defines the timing parameters of the scan (how quickly packets are sent). The options range from 0-5, 0 being the slowest. The options are defined as follows: paranoid|sneaky|polite|normal|aggressive|insane.
 
 <br/><br/>
 ##NMap Scripting Engine
@@ -83,3 +90,6 @@ This shows an argument being passed to a script. These arguments are normally pr
 * *--script-args-file <arguments.txt>* - This will provide arguments from a text file.
 
 The [nmap](https://nmap.org/) website provides a lot more information on scripts.
+
+##Zenmap GUI
+Zenmap is a version of Nmap that utilises a GUI. This can be quite useful if you do not know specific commands as it can help you construct different types of scan. This can also make it easier to interpret the results of a scan as it structures the results of the scans and can be used to visually show a network after the scan.
