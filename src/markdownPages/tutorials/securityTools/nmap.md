@@ -58,7 +58,7 @@ Some extra arguments you can use for nmap:
 * *-sS* - This is a TCP SYN scan. This is the default scan type when an option is not specified and will send SYN packets, without opening a full connection. This is often referred to as a *'half open'* scan. This technique tends to be very quick as you're not relying on connections to be fully established before scanning the next port/host.
 * *-sU* - This is a UDP scan. This is useful for scanning targets that may have services utilising UDP, such as DNS or DHCP.
 * *-sA* - This defines and ACK scan, where this flag is set in the packet.
-* *-sX* - This initiates an Xmas scan. This sets the FIN, PSH, and URG flags in the packet. This style of scan, and some others, are useful if you need to get through a non-stateful firewall.
+* *-sX* - This initiates an Xmas scan. This sets the FIN, PSH, and URG flags in the packet. This style of scan, and some others, are useful if you need to getX through a non-stateful firewall.
 * *-T4* - This defines the timing parameters of the scan (how quickly packets are sent). The options range from 0-5, 0 being the slowest. The options are defined as follows: paranoid|sneaky|polite|normal|aggressive|insane.
 
 <br/><br/>
