@@ -1,5 +1,5 @@
 ---
-path: "/tutorials/securitypentesttools/Msfvenom"
+path: "/tutorials/securitypentesttools/msfvenom"
 date: "2020-04-06"
 title: "MSFVenom"
 ---
