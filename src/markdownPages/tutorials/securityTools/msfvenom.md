@@ -127,4 +127,15 @@ If this command works then you have successfully escalated you privilege. Well d
 ####Post Exploitation Activities
 So you've compromised a device and escalated your privileges, now what?
 
-Well you can
+Well you can do any number of things. I'll show you some of the things you might want to do. 
+
+* *ls* - Lists the current directory contents.
+* *cd* - Change directory.
+* *pwd* - Prints the current directory.
+* *timestomp secret.txt -v* Alters the Modified, Access, Created, Entry Modified (MACE) attributes.
+* *download myFile.doc* - Downloads the specified document to your machine.
+* *search -f "myFile.doc"* - Searches for files on the system. You can search in specific folders or the whole system.
+* *keyscan_start* - Initiates key capturing on the victim.
+* *keyscan_dump* - Dumps the keystrokes to the terminal
+* *idletime* - Displays the time, in seconds, the system has been idle.
+* *shutdown* - Shutdowns the victim's machine.
