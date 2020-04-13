@@ -123,3 +123,8 @@ run post/windows/gather/smart_hashdump
 ```
 
 If this command works then you have successfully escalated you privilege. Well done!
+
+####Post Exploitation Activities
+So you've compromised a device and escalated your privileges, now what?
+
+Well you can
