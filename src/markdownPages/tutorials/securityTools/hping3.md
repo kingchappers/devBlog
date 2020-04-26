@@ -34,3 +34,16 @@ hping3 -S <myIPAddress> -p 80 -c 10
 hping3 <myIPAddress> --flood
 ```
 * This will flood the target with packets as fast as possible. This mode does not show replies by default.
+
+###Denial of Service
+
+As well as scanning hping3 can be used to perform denial of service (DOS) attacks. This is very easy to do with the following command.
+
+```bash
+hping3 -S <targetIP> -a <hostIP> -p22 --flood
+```
+
+* *-S* - Sets the SYN flag in the packets.
+* *-a* - Allows you to set the IP address of the source, this allows you to spoof the source address.
+* *-p* - Sets the port.
+* *--flood* - Tells hping3 to flood the target with packets.
