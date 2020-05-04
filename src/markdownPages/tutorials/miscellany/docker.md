@@ -111,3 +111,7 @@ Copies a file from the host to the container.
 docker logs
 ```
 Shows the run logs for your container. You can add a container IP to the end of this to specify which one you would like the logs from.
+```
+docker run --rm <myImage>
+```
+Runs an image that will be deleted when it exits.
