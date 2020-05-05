@@ -61,6 +61,7 @@ Some extra arguments you can use for nmap:
 * *-sX* - This initiates an Xmas scan. This sets the FIN, PSH, and URG flags in the packet. This style of scan, and some others, are useful if you need to getX through a non-stateful firewall.
 * *-T4* - This defines the timing parameters of the scan (how quickly packets are sent). The options range from 0-5, 0 being the slowest. The options are defined as follows: paranoid|sneaky|polite|normal|aggressive|insane.
 * *-sV* - This will enable version detection allowing NMap to determine the version of a service a device is running.
+* *-f* - Uses fragmented packets when scanning, this can help avoid packet inspection on some firewalls.
 
 <br/><br/>
 ##NMap Scripting Engine
