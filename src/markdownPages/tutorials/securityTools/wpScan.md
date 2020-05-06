@@ -13,3 +13,4 @@ wpscan --url http://<mySite> --enumerate u
 ```
 
 This will scan the url and attempt to enumerate users of the server. After discovering the users you can use that information to attempt to crack their passwords.
+
