@@ -17,10 +17,10 @@ const IndexPage = () => (
       <div className="card-columns">
         <Card style={styles.cardSize}>
           <Card.Body>
-            <Card.Title className="font-weight-bold">Auto-Cyber-Range</Card.Title>
+            <Card.Title className="font-weight-bold">Athena</Card.Title>
             <Card.Text>The aim of this project is to allow people to configure and use a cyber range without having to go through the painstaking process of building a virtual network from scratch. In the initial stages I'll be creating a basic docker network, then I'll work on auto configuring some virtual machines, and finally move to make a front-end for the project.</Card.Text>
 
-            <a className="nav-link mx-5" href="https://github.com/kingchappers/auto-cyber-range" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size='2x' color='black'/> <span className="sr-only"></span></a>
+            <a className="nav-link mx-5" href="https://github.com/kingchappers/Athena" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size='2x' color='black'/> <span className="sr-only"></span></a>
           </Card.Body>
         </Card>
       </div>
