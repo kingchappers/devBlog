@@ -93,3 +93,53 @@ Vagrant allows you to specify and create networks to attach VMs to, you do this 
 config.vm.network :forwarded_port, guest: 80, host: 4567
 ```
 This will map port 80 on the VM to port 4567 on the host machine.
+
+##Configuring Boxes
+You can create your own boxes in Vagrant.
+
+The following will create a VirtualBox Ubuntu machine. If you're not doing this you're mileage may vary.
+
+First create the VM and disable audio, we won't need that. 
+
+Now start the build process for that VM/
+
+You'll need the user to have a username and password of vagrant. The following steps were taken for an Ubuntu host; if you're using something else the steps may differ.
+
+Edit/Create */etc/sudoers.d/vagrant* to resemble the following
+```
+#add vagrant user
+vagrant ALL=(ALL) NOPASSWD:ALL
+```
+
+Now install the Vagrant key, this is insecure.
+
+```bash
+mkdir -p /home/vagrant/.ssh
+chmod 0700 /home/vagrant/.ssh
+
+wget --no-check-certificate https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub/ -O /home/vagrant/.ssh/authorized_keys
+
+chmod 0600 /home/vagrant/.ssh/authorized_keys
+
+chown -R vagrant /home/vagrant/.ssh
+```
+
+Now install OpenSSH, guest tools and the VBoxAdditions. to install the guest tools install the following:
+```
+apt install gcc dkms build-essential linux-headers-generic
+```
+Now exit the VM and do the below, this can be done from anywhere in the host:
+
+```
+mkdir ./mybox
+cd ./mybox
+vagrant package --base <myVMName>
+```
+To add and run the box:
+
+```
+vagrant box add <myVMName>
+vagrant init <myVMName>
+vagrant up
+```
+
