@@ -85,3 +85,11 @@ The provisioner tells Vagrant how to process the file you give it, some other pr
 * Ansible
 * Puppet
 * Salt
+
+###Networking
+Vagrant allows you to specify and create networks to attach VMs to, you do this in the Vagrantfile:
+
+```ruby
+config.vm.network :forwarded_port, guest: 80, host: 4567
+```
+This will map port 80 on the VM to port 4567 on the host machine.
