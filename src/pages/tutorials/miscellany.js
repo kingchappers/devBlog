@@ -39,6 +39,17 @@ const IndexPage = () => (
           </Card>
         </Link>
 
+        <Link to="/tutorials/miscellany/vagrant" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Vagrant</Card.Title>
+              <Card.Text className="text-left">
+                Vagrant is a tool that can be used to automate the creation of virtual machines. This allows you to easily spin up and configure virtual environments. This is quite useful when you are unable to use a containerisation tools like Docker. I've used it for spinning up virtual machines that cannot utilise Docker, such as a pfsense environment that runs on freeBSD.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+
         <Link to="/tutorials/miscellany/ping" className="link-no-style" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
