@@ -63,3 +63,25 @@ Some other useful vagrant commands you might need:
 * `vagrant reload` - Restarts the running box.
 * `vagrant suspend` - Puts the VM into sleep mode.
 * `vagrant halt` - Shuts the VM down.
+
+####Synced Files
+Files can be synchronised between the host and the VM. By default anything stored within the project's directory will appear in the */vagrant/* directory on the VM.
+
+####Scripts
+You can run scripts when a VM starts. To do that you need to add something like the following to your Vagrantfile:
+
+```
+config.vm.provision :shell, path: "bootstrap.sh"
+```
+* *:shell* - Tells Vagrant to use the shell provisioner.
+* *path:* - Tells Vagrant where the shell file is located, this is relative to the project.
+
+The provisioner tells Vagrant how to process the file you give it, some other provisioners include:
+* CFEngine
+* Docker
+* File
+* Chef
+* Podman
+* Ansible
+* Puppet
+* Salt
