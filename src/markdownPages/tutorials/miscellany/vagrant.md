@@ -143,3 +143,13 @@ vagrant init <myVMName>
 vagrant up
 ```
 
+To make a box from a box that already exists:
+
+Get the box and make your changes. Do the following command:
+```
+vagrant package --output <mybox>.box
+```
+
+Now you can add and use the box.
+
+Once you've created or edited the box you want you can then upload it to somewhere like vagrantcloud so others can make use of the box.
