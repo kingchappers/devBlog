@@ -152,4 +152,4 @@ vagrant package --output <mybox>.box
 
 Now you can add and use the box.
 
-Once you've created or edited the box you want you can then upload it to somewhere like vagrantcloud so others can make use of the box.
+Once you've created or edited the box you want you can then upload it to somewhere like vagrantcloud so others can make use of the box. 
