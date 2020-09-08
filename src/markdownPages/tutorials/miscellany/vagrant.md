@@ -94,6 +94,50 @@ config.vm.network :forwarded_port, guest: 80, host: 4567
 ```
 This will map port 80 on the VM to port 4567 on the host machine.
 
+##Multi-Machine Environments
+
+Vagrant is capable of provisioning multiple VMs using a single Vagrantfile. This is actually quite simple as you can see from the example below:
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.provider "virtualbox" do |v|
+    v.gui = true
+    v.memory = 1024
+  end
+
+  config.vm.define "dhcp" do |dhcp|
+    dhcp.vm.box = "kingchappers/windows2016EvalDHCP"
+    dhcp.vm.communicator = "winrm"
+    dhcp.vm.network "private_network", ip: "172.28.128.4"
+  end 
+
+  config.vm.define "dns" do |dns|
+    dns.vm.box = "kingchappers/windowsServer2016EvalDNS"
+    dns.vm.communicator = "winrm"
+    dns.vm.network "public_network", bridge: "ens20u1u4"
+    dns.vm.network "private_network", ip: "172.28.128.5"
+  end
+
+  config.vm.define "dc" do |dc|
+    dc.vm.box = "kingchappers/windowsServer2016EvalDomainController"
+    dc.vm.communicator = "winrm"
+    dc.vm.network "private_network", ip: "172.28.128.6"
+  end
+
+end
+```
+There's a lot to take in here and I've included some different concepts not mentioned before. I'll go through the file bit by bit. The first section configures some global settings for the provider, in this case it's VirtualBox. 
+
+* `v.gui` - This sets the VirtualBox GUI to start with the VM.
+* `v.memory` - This sets the available memory to all the machines configured here.
+
+In the next few section you'll see some familiar configuration syntax but with some changes. Rather than using `|config|` to specify a VM we have had to give each individual VM a variable name, which is how we refer to them in the rest of the section. 
+
+`.vm.communicator` - This syntax is used to specify how Vagrant attempts to contact the VM to determine it's status post boot. Normally this is handled via SSH, however it is often done using winrm for Windows VMs.
+
+Next we come to the networking section. There are two different types used here; `"private_network"` which defines a host-only adaptor within VirtualBox, and `"public_network"` which defines a bridged adaptor in VirtualBox. In the private network I have specified static IP addresses for the devices, you can however leave this up to DHCP. 
+
+You'll also notice the `bridge:` section in the public network. This specifies the adaptor on the host that you are *bridging* out of. If you do not specify this in the Vagrantfile Vagrant will ask when it attempts to set up the adaptor by listing the adaptors available on the host.
+
 ##Configuring Boxes
 You can create your own boxes in Vagrant.
 
