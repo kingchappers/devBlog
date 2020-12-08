@@ -59,7 +59,7 @@ Get-ADPrincipalGroupMembership
 * This Gets all of the AD groups a user is in.
 
 ```powershell
-Get-ADUser -Filter 'Name -like "Sam Chapman" -Properties *  
+Get-ADUser -Filter 'Name -like "Sam Chapman"' -Properties *  
 ```
 * Gets the user where the name is like the filter, and shows all properties associated with that user.
 
