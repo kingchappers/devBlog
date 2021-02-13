@@ -71,6 +71,18 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </Link>
+
+        <div className="card-columns">
+      <Link to="/tutorials/miscellany/python" className="link-no-style" style={styles.cardLink}>
+          <Card style={styles.cardSize}>
+            <Card.Body>
+              <Card.Title className="font-weight-bold">Python</Card.Title>
+              <Card.Text className="text-left">
+                This is just some me talking about Python. At the time of writing I've been going through the Black Hat Python book by Justin Seitz.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
         
       </div>    
 
