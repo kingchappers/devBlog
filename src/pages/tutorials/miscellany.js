@@ -72,7 +72,6 @@ const IndexPage = () => (
           </Card>
         </Link>
 
-        <div className="card-columns">
       <Link to="/tutorials/miscellany/python" className="link-no-style" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
