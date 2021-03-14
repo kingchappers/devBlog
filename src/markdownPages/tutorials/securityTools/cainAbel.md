@@ -8,7 +8,7 @@ Cain and Abel is a great tool for performing Man-In-The-Middle (MITM) attacks. T
 
 Cain and Abel is a Windows tool, when you first launch it it looks like the below:
 
-1](./cainAbel/cainAbel1.png)
+![Cain&Abel 1](./cainAbel/cainAbel1.png)
 
 You'll have to configure the network adapter yourself. To do this click on the Configure button at the top and you'll see the following popup.
 
