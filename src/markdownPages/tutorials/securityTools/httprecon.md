@@ -22,6 +22,6 @@ The 'Fingerprint Details' and 'Report Preview' tabs give you a little more infor
 
 If you would like to see further details about the other request types sent by HTTPRecon click one of the other tabs at the top and view the 'Fingerprint Details' tab, as shown below:
 
-![httpRecon 4](./httpRecon/httpRecon4.png)
+![httpRecon 4](./httpRecon/httpRecon4.png 'test')
 
 There isn't a lot of information shown by this tool, however, it does allow you to narrow your search for vulnerabilities to specific servers and server versions when performing a penetration test.

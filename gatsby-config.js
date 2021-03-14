@@ -103,7 +103,7 @@ module.exports = {
           //The below allows you to add images to markdown files
           {
             //resolve: `gatsby-remark-images`,
-            resolve: 'gatsby-plugin-image',
+            resolve: `gatsby-plugin-image`,
             options: {
               maxWidth: 1200,
               linkImagesToOriginal: true
