@@ -1,6 +1,5 @@
 import React from "react"
 import { Container, Card  } from "react-bootstrap"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -21,8 +20,8 @@ const IndexPage = () => (
         <a href="https://github.com/kingchappers/adUserProvisioner" className="link-no-style" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
-              <Card.Title className="font-weight-bold">Auto-Cyber-Range</Card.Title>
-              <Card.Text>The aim of this project is to allow people to configure and use a cyber range without having to go through the painstaking process of building a virtual network from scratch. In the initial stages I'll be creating a basic docker network, then I'll work on auto configuring some virtual machines, and finally move to make a front-end for the project.</Card.Text>
+              <Card.Title className="font-weight-bold">Ad User Provisioner</Card.Title>
+              <Card.Text>The idea of this program is to help automate the creation of users in Active Directory. This tool will use a configuration file allowing people to select from a list of approved options when it comes to things like department, office, etc. This should ensure that there is less chance of a user's configuration being a problem in the future. </Card.Text>
 
               <a className="nav-link mx-5" href="https://github.com/kingchappers/adUserProvisioner" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size='2x' color='black'/> <span className="sr-only"></span></a>
             </Card.Body>
