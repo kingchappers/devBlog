@@ -3,9 +3,9 @@ path: "/tutorials/linuxTools/textManipulation"
 date: "2019-08-04"
 title: "Text Manipulation"
 ---
-This tutorial will teach you the basics of the *tr* command to manipulate text. This may seem like a trivial tool but it can, in fact, be extremely useful in a number of different scenarios. 
+This tutorial will teach you the basics of the *tr* command to manipulate text. This may seem like a trivial tool but it can be extremely useful in a number of different scenarios. 
 
-The *tr* command is primarily used to translate of delete characters in files. To delete specific characters from a text file simply do the following:
+The *tr* command is primarily used to translate or delete characters in files. To delete specific characters from a text file simply do the following:
 ```bash
 tr -d ":,." <input.txt> <output.txt>
 ```
