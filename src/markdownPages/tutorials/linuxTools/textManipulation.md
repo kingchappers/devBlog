@@ -6,7 +6,7 @@ title: "Text Manipulation"
 
 This section gives some of the basic usage of different text manipulation. The idea is not to give a full overview of them as there are plenty of different tutorials for that, this is to give me, and anyone reading this, a brief refresher on the tools out there and basic usage.
 
-###Awk
+##Awk
 Awk isn't just a tool, it's a programming language meaning it is better learned by using it to complete specific tasks rather than just aiming it at a random file to see what happens. That said, that's exactly what I'm going to be doing here just as a basic refresher on Awk. 
 
 For the purpose of this tutorial all of the searches I'll be using a txt file with the following contents:
@@ -55,7 +55,21 @@ awk -F ':' '/Linux/ { print $2;}' os.txt
 
 ####Awk Functions
 
-###TR
+As with any programming language, Awk has functions. Awk has built in functions and allows you to define your own. Basic usage is achieved like:
+
+```Awk
+awk '{print length($0);}' os.txt
+```
+This will print out the length of each line in the document.
+
+```Awk
+awk '{print length($1);}' os.txt
+```
+This will print out the length of the first field (word) of each line.
+
+There are a great many built in functions, so rather than try and list them and their usage I'll leave you to research more to suit your needs. The [gnu website on Gawk](https://www.gnu.org/software/gawk/manual/html_node/Functions.html) seems like a reasonable guide to start with. Gawk is the GNU implementation of Awk and contains several extensions to the language.
+
+##TR
 
 This section will teach you the basics of the *tr* command to manipulate text. This may seem like a trivial tool but it can be useful in different scenarios. 
 
