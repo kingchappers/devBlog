@@ -92,3 +92,41 @@ tr -d '[:punct:]' <input.txt> <output.txt>
 tr 'a-z' 'A-Z' <input.txt> <output.txt>
 ```
 * The above will convert all lowercase characters to uppercase ones.
+
+##sed
+
+The sed stream editor is a useful tool to help you edit plain text files on the fly. It also allows you to view parts of files in different ways.
+
+```bash
+sed -n '3p' os.txt
+```
+
+*-n* is used to supress output and *p* is used to print specific lines, so in the above example you'll see only line 3 of the file
+
+```bash
+sed -n '4,11p' os.txt
+```
+
+This will show you lines 4-11 of the given file.
+
+```bash
+sed '4,10d' os.txt 
+```
+
+This command does the opposite, showing all lines except 4-10.
+
+Editing files with sed is also fairly simple. 
+
+```bash
+sed 's/Linux/paper/g' os.txt
+```
+
+This will replace insances of the word Linux with the word paper. If you want to ignore character case us *gi* instead of *g*.
+
+```bash
+sed '30,40 s/Linux/paper/g' os.txt
+```
+
+Building on the previous command the above will do the replacement only in the given line span.
+
+These are the absolute basics of sed. It can get way more complex which includes adding regex, but there are plenty of tutorials out there. 
