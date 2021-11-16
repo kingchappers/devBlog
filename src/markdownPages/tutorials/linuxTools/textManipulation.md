@@ -130,3 +130,27 @@ sed '30,40 s/Linux/paper/g' os.txt
 Building on the previous command the above will do the replacement only in the given line span.
 
 These are the absolute basics of sed. It can get way more complex which includes adding regex, but there are plenty of tutorials out there. 
+
+##Grep
+
+Grep is a very widely known tool used for searching for patterns in files. 
+
+```bash
+grep "Linux" os.txt
+```
+
+This will look for and highlight anywhere the text "Linux" appears in a file. Grep is case sensitive by default so watch out for that. Use *-i* to make the query case insensitive.
+
+```bash
+grep "OS.*)" os.txt
+```
+
+This is a fairly basic regex query, it looks for lines that start with "OS" and end with a ). Regex gets way more complicated than that and is something I'm definitely qualified to write about here. 
+
+```bash
+grep -w "Linux" os.txt
+```
+
+The *-w* flag searches for full words. This differs from the previous example as it won't match everything where the term "Linux" appears for example a word like "jfdskljfdlksajklLinuxjfkdslajfkldsa" would not be returned in the result.
+
+Like most of the other items in this section grep can do much cooler things than what I talked about. But there are more comprehensive guides to doing that out there on the internet.
