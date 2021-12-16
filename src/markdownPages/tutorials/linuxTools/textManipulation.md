@@ -185,3 +185,26 @@ Command:
 ```bash
 sort -k 2 example.txt
 ```
+
+##Uniq
+Uniq is used to remove duplicate lines in a file. For this we'll use a file with the contents below:
+
+```txt
+this is a test
+this is a test
+this is a test
+
+repeated line
+repeated line
+
+Not repeated  1 this is a test
+```
+
+```bash
+uniq example.txt
+```
+
+This will output the lines without the duplicates. It does not actually remove anything from the file. Some of the options:
+
+* **-c** - Outputs the lines with a count of how many times it's in the document.
+* **-d** - Outputs only the repeated lines.
