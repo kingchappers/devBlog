@@ -154,3 +154,34 @@ grep -w "Linux" os.txt
 The *-w* flag searches for full words. This differs from the previous example as it won't match everything where the term "Linux" appears for example a word like "jfdskljfdlksajklLinuxjfkdslajfkldsa" would not be returned in the result.
 
 Like most of the other items in this section grep can do much cooler things than what I talked about. But there are more comprehensive guides to doing that out there on the internet.
+
+##Sort
+
+Sort is a tool used for, you guessed it, sorting files. 
+
+```bash
+sort os.txt
+```
+
+This is the basic usage. It will output the contents of the file in alphabetical order. It's that simple!
+
+There are a few options for the sort command that could be quite useful.
+
+* **-r** - This reverses the order of the sorting
+* **-n** - This sorts numerical data
+* **-u** - This will sort and remove any duplicates. This will write to the file.
+* **-k** - This will sort data based on the column number supplied.
+
+Example of **-k**:
+File used: 
+```txt
+John    14
+Heather 32
+Sam     45
+Harry   10
+Sarah   23
+```
+Command:
+```bash
+sort -k 2 example.txt
+```
