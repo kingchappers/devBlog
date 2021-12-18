@@ -232,3 +232,42 @@ This will cut the first and second field from the file. By default fields are se
 cut -d " " -f 1,2 example.txt
 ```
 You can set your own delimiter using *-d*. I the above we've set the delimiter to a space so the command effectively prints the first two words of every line in my file. 
+
+##Fmt
+Fmt is a formatter for text files. This is useful when you have a very large text file that would be time consuming to format manually. 
+
+Without an option fmt will format all consecutive lines into a single line, where there is a gap it will group them.
+
+```txt
+this is a test
+this is a test
+this is a test
+
+repeated line
+repeated line
+
+Not repeated
+```
+
+```bash
+fmt example.txt
+```
+Output of command:
+```text
+this is a test this is a test this is a test
+
+repeated line repeated line
+
+Not repeated
+```
+
+```bash
+fmt -w 5 example.txt
+```
+The above sets the maximum width of a line to 10, this does not cut off a word if a word makes the line over the set limit it will be put on the next line. The default is normally 75. 
+
+```bash
+fmt -t example.txt
+```
+This will change the indentation of the first line, by default this means the first line is not indented but the rest are. 
+
