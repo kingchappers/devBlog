@@ -16,7 +16,7 @@ const IndexPage = () => (
       <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Work in Progress</h2>
       
       <div className="card-columns">
-        <a href="https://github.com/kingchappers/adUserProvisioner" className="link-no-style" style={styles.cardLink}>
+        <a href="https://github.com/kingchappers/adUserProvisioner" className="text-decoration-none" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Ad User Provisioner</Card.Title>
@@ -30,7 +30,7 @@ const IndexPage = () => (
 
       <h2 style={{marginTop: '3rem', marginBottom: '1.5rem'}}>Finished Projects</h2>
       <div className="card-columns">
-        <a href="https://github.com/kingchappers/devBlog" className="link-no-style" style={styles.cardLink}>
+        <a href="https://github.com/kingchappers/devBlog" className="text-decoration-none" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">GatsbyJS</Card.Title>
@@ -41,7 +41,7 @@ const IndexPage = () => (
           </Card>
         </a>
 
-        <a href="https://github.com/kingchappers/dm-outrun" className="link-no-style" style={styles.cardLink}>
+        <a href="https://github.com/kingchappers/dm-outrun" className="text-decoration-none" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">rEFInd Theme - DM-Outrun</Card.Title>
@@ -55,7 +55,7 @@ const IndexPage = () => (
 
       <h2 style={{marginTop: '3rem', marginBottom: '1.5rem'}}>Discontinued Projects</h2>
       <div className="card-columns">
-        <a href="https://github.com/kingchappers/auto-cyber-range" className="link-no-style" style={styles.cardLink}>
+        <a href="https://github.com/kingchappers/auto-cyber-range" className="text-decoration-none" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Athena</Card.Title>

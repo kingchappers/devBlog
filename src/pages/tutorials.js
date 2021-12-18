@@ -20,7 +20,7 @@ const IndexPage = () => (
       </p>
 
       <div className="card-columns">
-        <Link to="/tutorials/securitypentesttools" className="link-no-style" style={styles.cardLink}>
+        <Link to="/tutorials/securitypentesttools" className="text-decoration-none" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Security & Pen Test Tools</Card.Title>
@@ -31,7 +31,7 @@ const IndexPage = () => (
           </Card>
         </Link>
 
-        <Link to="/tutorials/linuxTools" className="link-no-style" style={styles.cardLink}>
+        <Link to="/tutorials/linuxTools" className="text-decoration-none" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Linux Tools</Card.Title>
@@ -42,7 +42,7 @@ const IndexPage = () => (
           </Card>
         </Link>
 
-        <Link to="/tutorials/linuxConfiguration" className="link-no-style" style={styles.cardLink}>
+        <Link to="/tutorials/linuxConfiguration" className="text-decoration-none" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Linux Configuration</Card.Title>
@@ -53,7 +53,7 @@ const IndexPage = () => (
           </Card>
         </Link>
 
-        <Link to="/tutorials/miscellany" className="link-no-style" style={styles.cardLink}>
+        <Link to="/tutorials/miscellany" className="text-decoration-none" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Miscellany</Card.Title>
@@ -64,7 +64,7 @@ const IndexPage = () => (
           </Card>
         </Link>
        
-        <Link to="/tutorials/windowsTools" className="link-no-style" style={styles.cardLink}>
+        <Link to="/tutorials/windowsTools" className="text-decoration-none" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
               <Card.Title className="font-weight-bold">Windows Tools</Card.Title>
