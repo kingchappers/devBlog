@@ -16,7 +16,7 @@ const IndexPage = () => (
         These are some of the Windows based tools I've used in both my professional life and in the various projects I've done as hobbies. 
       </p>
 
-      <div className="card-columns">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
       <Link to="/tutorials/windowsTools/powershell" className="link-no-style" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>

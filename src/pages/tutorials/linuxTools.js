@@ -16,7 +16,7 @@ const IndexPage = () => (
         Linux is a great operating system, but it can be fairly daunting going into an environment that's very command line heavy. The tutorials here should give you a little more knowledge of some of the tools available in a Linux environment. These are ones that I have personally struggled with at least.
       </p>
 
-      <div className="card-columns">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
       <Link to="/tutorials/linuxTools/miscLinux" className="link-no-style" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>

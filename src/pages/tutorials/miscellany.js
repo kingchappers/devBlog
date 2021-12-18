@@ -16,7 +16,7 @@ const IndexPage = () => (
         Here are some tools that didn't really fit anywhere else, and are mostly operating system agnostic and do not fit in the other areas.
       </p>
 
-      <div className="card-columns">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
       <Link to="/tutorials/miscellany/mySql" className="link-no-style" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>

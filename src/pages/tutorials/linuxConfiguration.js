@@ -16,7 +16,7 @@ const IndexPage = () => (
         These offer some fairly simple tips and tricks regarding the configuration of Linux. These are especially useful when configuring an OS like Arch from scratch.
       </p>
 
-      <div className="card-columns">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
       <Link to="/tutorials/linuxConfiguration/xorgConfiguration" className="link-no-style" style={styles.cardLink}>
           <Card style={styles.cardSize}>
             <Card.Body>
