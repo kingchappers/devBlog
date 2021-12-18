@@ -8,7 +8,7 @@ import { faGithub, faLinkedin, faMicrosoft } from "@fortawesome/free-brands-svg-
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "Contact" }}>
-    <SEO title="Contact" keywords={[`gatsby`, `react`, `bootstrap`]} />
+    <SEO title="Contact" keywords={[`Gatsby`, `React`, `Bootstrap`]} />
     
       <h2>Contact</h2>
 

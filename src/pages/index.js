@@ -8,7 +8,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
-    <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
+    <SEO title="Home" keywords={[`Gatsby`, `React`, `Bootstrap`]} />
 
       <p class="left">I wanted to create a page that showcases some of the I'm either working on or have finished. I'll post the code to most of these projects on GitHub. I hope you like them, and if you have any suggestions for improvements/features please get in touch.</p>
       <p className="text-left">I'll also be posting tutorials. These tutorials will be on a variety of topics; mostly things that I've personally worked on and in some cases struggled with myself. Again please feel free to get in touch if you have any trouble with them or want some futher information on some of the topics. I wouldn't call myself an expert on most of the topics, but where I can help I will</p>
