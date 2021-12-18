@@ -17,15 +17,15 @@ const IndexPage = () => (
       </p>
 
       <div class="row row-cols-1 row-cols-md-3 g-4">
-      <Link to="/tutorials/windowsTools/powershell" className="link-no-style" style={styles.cardLink}>
-          <Card style={styles.cardSize}>
-            <Card.Body>
-              <Card.Title className="font-weight-bold">PowerShell</Card.Title>
-              <Card.Text className="text-left">
+      <Link to="/tutorials/windowsTools/powershell" class="text-decoration-none" style={styles.cardLink}>
+          <div class="card" style={styles.cardSize}>
+            <div class="card-body">
+              <h5 class="card-title">PowerShell</h5>
+              <p class="card-text">
                 This will give you an overview of some useful PowerShell commands.
-              </Card.Text>
-            </Card.Body>
-          </Card>
+              </p>
+            </div>
+          </div>
         </Link>
         
       </div>    

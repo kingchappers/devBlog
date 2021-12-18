@@ -17,48 +17,48 @@ const IndexPage = () => (
       </p>
 
       <div class="row row-cols-1 row-cols-md-3 g-4">
-      <Link to="/tutorials/linuxConfiguration/xorgConfiguration" className="link-no-style" style={styles.cardLink}>
-          <Card style={styles.cardSize}>
-            <Card.Body>
-              <Card.Title className="font-weight-bold">Xorg Config</Card.Title>
-              <Card.Text className="text-left">
+      <Link to="/tutorials/linuxConfiguration/xorgConfiguration" class="text-decoration-none" style={styles.cardLink}>
+          <div class="card" style={styles.cardSize}>
+            <div class="card-body">
+              <h5 class="card-title">Xorg Config</h5>
+              <p class="card-text">
                 This is small set of fairly basic tutorials regarding the setup of keyboards, monitors, and mice for the Xorg display server.
-              </Card.Text>
-            </Card.Body>
-          </Card>
+              </p>
+            </div>
+          </div>
         </Link>
       
-        <Link to="/tutorials/linuxConfiguration/archTips" className="link-no-style" style={styles.cardLink}>
-          <Card style={styles.cardSize}>
-            <Card.Body>
-              <Card.Title className="font-weight-bold">Arch Tips/Tricks</Card.Title>
-              <Card.Text className="text-left">
+        <Link to="/tutorials/linuxConfiguration/archTips" class="text-decoration-none" style={styles.cardLink}>
+          <div class="card" style={styles.cardSize}>
+            <div class="card-body">
+              <h5 class="card-title">Arch Tips/Tricks</h5>
+              <p class="card-text">
                 This is small set of fairly basic tutorials regarding different hints and tips you can use to configure a fresh installation of Arch, or some other lightweight distro.
-              </Card.Text>
-            </Card.Body>
-          </Card>
+              </p>
+            </div>
+          </div>
         </Link>
 
-        <Link to="/tutorials/linuxConfiguration/addPartitionToGrub" className="link-no-style" style={styles.cardLink}>
-          <Card style={styles.cardSize}>
-            <Card.Body>
-              <Card.Title className="font-weight-bold">Add a New Disk to GRUB</Card.Title>
-              <Card.Text className="text-left">
+        <Link to="/tutorials/linuxConfiguration/addPartitionToGrub" class="text-decoration-none" style={styles.cardLink}>
+          <div class="card" style={styles.cardSize}>
+            <div class="card-body">
+              <h5 class="card-title">Add a New Disk to GRUB</h5>
+              <p class="card-text">
                 This will show you how to add a partition on a separate drive. The tutorial looks at a Windows drive but it can be changed for any OS.
-              </Card.Text>
-            </Card.Body>
-          </Card>
+              </p>
+            </div>
+          </div>
         </Link>
       
-        <Link to="/tutorials/linuxConfiguration/displaysvrAndDisplaymgr" className="link-no-style" style={styles.cardLink}>
-          <Card style={styles.cardSize}>
-            <Card.Body>
-              <Card.Title className="font-weight-bold">Install Display Server and Display Manager</Card.Title>
-              <Card.Text className="text-left">
+        <Link to="/tutorials/linuxConfiguration/displaysvrAndDisplaymgr" class="text-decoration-none" style={styles.cardLink}>
+          <div class="card" style={styles.cardSize}>
+            <div class="card-body">
+              <h5 class="card-title">Install Display Server and Display Manager</h5>
+              <p class="card-text">
                 This will show you how to install a display server and display manager on lightweight distros. 
-              </Card.Text>
-            </Card.Body>
-          </Card>
+              </p>
+            </div>
+          </div>
         </Link>
         
       </div>    
