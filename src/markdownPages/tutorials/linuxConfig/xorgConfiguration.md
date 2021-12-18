@@ -11,7 +11,7 @@ Before we start please bare in mind all configuration files within the xorg.conf
 
 Xorg will search for configuration files in a number of directories; the locations searched are described within the xorg.conf manual, which is also available [here](ftp://www.x.org/pub/X11R6.7.0/doc/xorg.conf.5.html).
 <br/><br/>
-##Xorg Keyboard
+## Xorg Keyboard
 
 So, when I first installed Arch Linux I had trouble changing the default keyboard language setting. As it turns out this is pretty easy via xorg.conf. The only requirement for this tutorial is that you are using Xorg as your display server. Xorg can also be used to configure other peripheries, such as mice, touchpads, touchscreens, and monitors.
 

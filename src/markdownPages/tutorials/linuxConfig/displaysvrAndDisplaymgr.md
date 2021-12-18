@@ -6,7 +6,7 @@ title: "Display Server Installation and Display Manager Configuration"
 
 Brief instructions on installing the display server and display driver on a fresh install of Arch.
 <br/><br/>
-####Display Server
+#### Display Server
 For the installation of the display manager you simply need to install the following:
 1. xorg-server
 2. Graphics card drivers:
