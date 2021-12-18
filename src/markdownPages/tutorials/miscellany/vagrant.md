@@ -8,7 +8,7 @@ Vagrant is a tool that can be used to automate the creation of virtual machines.
 
 This page will teach the basics of Vagrant, and hopefully show ways it may be useful.
 
-###Project Setup
+### Project Setup
 
  Run the following commands:
 
@@ -64,10 +64,10 @@ Some other useful vagrant commands you might need:
 * `vagrant suspend` - Puts the VM into sleep mode.
 * `vagrant halt` - Shuts the VM down.
 
-####Synced Files
+#### Synced Files
 Files can be synchronised between the host and the VM. By default anything stored within the project's directory will appear in the */vagrant/* directory on the VM.
 
-####Scripts
+#### Scripts
 You can run scripts when a VM starts. To do that you need to add something like the following to your Vagrantfile:
 
 ```
@@ -86,7 +86,7 @@ The provisioner tells Vagrant how to process the file you give it, some other pr
 * Puppet
 * Salt
 
-###Networking
+### Networking
 Vagrant allows you to specify and create networks to attach VMs to, you do this in the Vagrantfile:
 
 ```ruby
@@ -94,7 +94,7 @@ config.vm.network :forwarded_port, guest: 80, host: 4567
 ```
 This will map port 80 on the VM to port 4567 on the host machine.
 
-##Multi-Machine Environments
+## Multi-Machine Environments
 
 Vagrant is capable of provisioning multiple VMs using a single Vagrantfile. This is actually quite simple as you can see from the example below:
 ```ruby
@@ -138,7 +138,7 @@ Next we come to the networking section. There are two different types used here;
 
 You'll also notice the `bridge:` section in the public network. This specifies the adaptor on the host that you are *bridging* out of. If you do not specify this in the Vagrantfile Vagrant will ask when it attempts to set up the adaptor by listing the adaptors available on the host.
 
-##Configuring Boxes
+## Configuring Boxes
 You can create your own boxes in Vagrant.
 
 The following will create a VirtualBox Ubuntu machine. If you're not doing this you're mileage may vary.
