@@ -208,3 +208,27 @@ This will output the lines without the duplicates. It does not actually remove a
 
 * **-c** - Outputs the lines with a count of how many times it's in the document.
 * **-d** - Outputs only the repeated lines.
+
+##Cut
+Cut is a command to cut out parts of text and print out the result. You can choose to cut based on a specific delimiter, byte position, or a character. When using cut you have to specify an argument otherwise you will get an error (How else would it know what you're trying to cut?).
+
+```bash
+cut -b 1,2,5 example.txt
+```
+
+This will cut the first, second, and fifth byte from the file.
+
+```bash
+cut -b 1,2,5-8 example.txt
+```
+This will cut the first, second, and fifth to eighth bytes from the file.
+
+```bash
+cut -f 1,2 example.txt
+```
+This will cut the first and second field from the file. By default fields are separated by a *tab* character. 
+
+```bash
+cut -d " " -f 1,2 example.txt
+```
+You can set your own delimiter using *-d*. I the above we've set the delimiter to a space so the command effectively prints the first two words of every line in my file. 
