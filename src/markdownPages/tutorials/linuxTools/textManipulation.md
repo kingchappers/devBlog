@@ -285,3 +285,18 @@ This will number and show the non-empty lines.
 nl -b a example.txt
 ```
 This will number and show all lines, even the empty ones. 
+
+##Wc
+
+Wc counts the number of lines, words and characters in a given file. It can count a few other things and you can see this in the options (there aren't many options in the man page so it's easy reading). 
+
+```bash
+wc example.txt
+```
+Output: 
+```
+18  526 3585 example.txt
+```
+* 18 is the line count
+* 526 is the word count
+* 3585 is the character count
