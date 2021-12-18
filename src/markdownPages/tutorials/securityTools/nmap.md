@@ -6,7 +6,7 @@ title: "NMap"
 
 NMap is a very powerful tool which allows you to scan for hosts on a network and view the open ports and services running on those hosts. This tutorial will give you an understanding of how to use the tool and also go on to using the scripting engine.
 
-####Basic Scan
+#### Basic Scan
 ```bash
 nmap <ipaddress>
 ```
@@ -15,13 +15,13 @@ nmap <website.com>
 ```
 Both of the above will scan the targets whether they are an ip or a website address.
 <br/><br/>
-####TCP SYN Scan
+#### TCP SYN Scan
 ```bash
 nmap -sS <ipaddress>
 ```
 This will change the scan to a TCP SYN scan, which will send SYN packets rather than the default ping packets. This can be useful when the host is blocking ping packets.
 <br/><br/>
-####Port Scans
+#### Port Scans
 ```bash
 nmap <ipaddress> --top-ports <numberOfPorts>
 ```
@@ -40,13 +40,13 @@ nmap -sT <ipaddress>
 ```
 The above two scans will scan all UDP and TCP ports respectively.
 <br/><br/>
-####Banner Grab Scan
+#### Banner Grab Scan
 ```bash
 nmap -sT -v -p- --script=banner <ipaddress>
 ```
 This one will scan all ports and identifies anything printed by a service, this is quite a common thing for services to do. This scan can help you understand more about a network during the enumeration phase.
 <br/><br/>
-####Other NMap Options
+#### Other NMap Options
 Some extra arguments you can use for nmap:
 * *oG* - This will give you an output you can use *grep* on.
 * *-p* - This allows you to scan specific ports.
@@ -64,7 +64,7 @@ Some extra arguments you can use for nmap:
 * *-f* - Uses fragmented packets when scanning, this can help avoid packet inspection on some firewalls.
 
 <br/><br/>
-##NMap Scripting Engine
+## NMap Scripting Engine
 NMap is able to automate certain tasks by using it's in built scripting engine.
 
 *-sC* - Will run the default scripts.
@@ -93,5 +93,5 @@ This shows an argument being passed to a script. These arguments are normally pr
 
 The [nmap](https://nmap.org/) website provides a lot more information on scripts.
 
-##Zenmap GUI
+## Zenmap GUI
 Zenmap is a version of Nmap that utilises a GUI. This can be quite useful if you do not know specific commands as it can help you construct different types of scan. This can also make it easier to interpret the results of a scan as it structures the results of the scans and can be used to visually show a network after the scan.

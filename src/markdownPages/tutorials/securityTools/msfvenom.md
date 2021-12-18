@@ -6,7 +6,7 @@ title: "MSFVenom"
 
 MSFVenom is a tool used to create malicious payloads for the Metasploit framework. The Metasploit framework is a tool for developing and executing remote exploits on a vulnerable target. Tools within the framework allow you to complete various stages of a penetration test.
 
-####Establishing a VNC Session
+#### Establishing a VNC Session
 MSFVenom can be used to create lots of different types of payload. One of these can be used to establish a VNC session on a remote host. Virtual Network Computing (VNC) is a system that allows remote graphical connections to a host, this allows you to use the device remotely as though you were sitting in front of it. There are a number of VNC variants offering different features. Establishing a malicious VNC session on a target machine gives you a good foothold in a target network.
 
 Generating a payload is simple enough:
@@ -57,7 +57,7 @@ run vnc
 
 
 
-####Escalating Privileges
+#### Escalating Privileges
 Escalating privilege is an essential part of any penetration test. This allows you to compromise a normal user account and then increase your level of privilege, enabling you to perform further actions on your victim's network/device.
 
 To generate the exploit generate our payload we'll use the following command:

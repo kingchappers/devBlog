@@ -5,7 +5,7 @@ title: "Packet Analysis Tools"
 ---
 This tutorial will give an overview of packet analysis tools such as Wireshark, Tshark, TCPDump, and NGrep.
 <br/><br/>
-###Wireshark
+### Wireshark
 Wireshark is one of the most useful tools for packet analysis, and can tell you a great deal about what is happening in a network. While it can be very time consuming to get to the useful information, and there are tools available that will automatically extract data from a packet capture they can miss things; which is why knowing how to use Wireshark is a very useful skill to have. I personally have used it in network forensics.
 
 In the examples I will be using example PCAP files that I have taken from [netresec.com](https://www.netresec.com/?page=MACCDC).
@@ -20,7 +20,7 @@ You can search for specific URL's in Wireshark:
 
 ![URI Query Wireshark](./packetAnalysisPics/uriQuery.png)
 
-####Decrypt TLS With Wireshark
+#### Decrypt TLS With Wireshark
 
 Using Wireshark you can decrypt SSL traffic There are two methods available. 
 
@@ -45,7 +45,7 @@ The second method requires you to have the private key.
 7. Password - Password that was assigned when exporting the key file. This may not be applicable in all scenarios.
 
 
-####File Extraction in Wireshark
+#### File Extraction in Wireshark
 
 Like with TLS decryption file extraction is fairly simple, only you can do this without prior work on the host device.
 
@@ -58,7 +58,7 @@ Like with TLS decryption file extraction is fairly simple, only you can do this 
 
 It is a fairly simple obfuscation technique to alter the file headers to make them unreadable to simple processes like this.
 
-####Packet Searching in Wireshark
+#### Packet Searching in Wireshark
 Wireshark can be used to search packets. This can be used to search for file headers, if you think some are being altered somehow.
 
 1. Go to Edit -> Find Packet *OR* CTRL+F
@@ -66,7 +66,7 @@ Wireshark can be used to search packets. This can be used to search for file hea
 3. Now select the part of the packet to search i.e. list, details, bytes.
 <br/><br/>
 
-###TCPDump
+### TCPDump
 TCPDump is a is a fairly simple tool used for capturing packets on a network. You can also use it for limited analysis of .pcap files.
 
 To capture files you can use one of the following command:
@@ -104,7 +104,7 @@ tcpdump -r <mypackets.pcap> src <myip> port 80
 * *port* - Allows you to specify that only a certain port is shown in the output.
 <br/><br/>
 
-###NGREP
+### NGREP
 NGREP is a GREP tool for .pcap files.
 
 ```bash
@@ -129,7 +129,7 @@ ngrep -I <mypackets.pcap> "POST" port '192.168.1.1'
 ```
 
 <br/><br/>
-###TSHARK
+### TSHARK
 TSHARK is a command line version of Wireshark. It can be quicker at analysing large .pcap files than TCPDUMP as it uses the same syntax as Wireshark filters. TSHARK can also analyse traffic from USB drives.  
 
 * *-i* - Starts a capture on a specified interface.

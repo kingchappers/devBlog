@@ -40,7 +40,7 @@ The filter tool is useful for reducing the number of vulnerabilities being shown
 
 ![Vulnerability Information](./nessusPics/scanComplete4.png)
 
-####Creating New Scans
+#### Creating New Scans
 This standard scan gives you some good information, but you will likely want to tailor a scan to your specific needs. To create a new scan go to the 'My Scans' page and click 'New Scan'. You will be presented by a screen similar to the below:
 
 ![New Scan](./nessusPics/newScan1.png)

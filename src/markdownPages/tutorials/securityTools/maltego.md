@@ -18,7 +18,7 @@ First comes the brief setup phase. Once you've installed it you'll need to go th
 
 I won't go through each of the setup phases, as I'm sure you can cope with these steps. As a note though I'm using the CE version in normal mode, just incase there are differences in the other versions/modes.
 
-#####Usage
+##### Usage
 Now we've setup Maltego, we're going to use it. There are so many options with it I'm not going to describe each one, as I'm sure you can experiment yourselves.
 
 ![Maltego Website 1](./maltegoPics/maltegoWebsite1.png)

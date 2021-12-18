@@ -5,13 +5,13 @@ title: "Hydra"
 ---
 Hydra is a tool used for brute forcing passwords. Please do not use this tool for anything other than testing, or where you have explicit permission to do so.
 
-####Common Flags
+#### Common Flags
 Some common flags for Hydra are:
 * *-s* - Specifies the port you would like to target.
 * *-v* - Keeps you updated on the number of attempts the tool has tried.
 * *-C* - uses colon separated username and passwords.
 
-####Command Example
+#### Command Example
 ```bash
 hydra -l <username> -P /usr/share/wordlists/metasploit/password.lst ftp://<ipAddress>
 ```

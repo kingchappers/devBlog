@@ -43,7 +43,7 @@ When a user browses to the page there will be a notification on SET with informa
 Once the user has entered their credentials they will be redirected to the legitimate login page i.e. facebook.com.
 
 
-####Errors
+#### Errors
 
 If you get any problems with the tool giving errors when the user attempts to sign in you may have to do the following.
 
