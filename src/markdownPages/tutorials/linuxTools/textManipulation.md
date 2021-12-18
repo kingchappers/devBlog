@@ -6,7 +6,7 @@ title: "Text Manipulation"
 
 This section gives some of the basic usage of different text manipulation. The idea is not to give a full overview of them as there are plenty of different tutorials for that, this is to give me, and anyone reading this, a brief refresher on the tools out there and basic usage.
 
-##Awk
+## Awk
 Awk isn't just a tool, it's a programming language meaning it is better learned by using it to complete specific tasks rather than just aiming it at a random file to see what happens. That said, that's exactly what I'm going to be doing here just as a basic refresher on Awk. 
 
 For the purpose of this tutorial all of the searches I'll be using a txt file with the following contents:
@@ -53,7 +53,7 @@ awk -F ':' '/Linux/ { print $2;}' os.txt
 
 **-F** is for field separator. So, we are specifying that we will separate fields with a colon. If you're using the example file you'll notice that the first two lines of output are empty, this is because there is no colon in these lines meaning field 2 does not actually exist.
 
-####Awk Functions
+#### Awk Functions
 
 As with any programming language, Awk has functions. Awk has built in functions and allows you to define your own. Basic usage is achieved like:
 
@@ -69,7 +69,7 @@ This will print out the length of the first field (word) of each line.
 
 There are a great many built in functions, so rather than try and list them and their usage I'll leave you to research more to suit your needs. The [gnu website on Gawk](https://www.gnu.org/software/gawk/manual/html_node/Functions.html) seems like a reasonable guide to start with. Gawk is the GNU implementation of Awk and contains several extensions to the language.
 
-##TR
+## TR
 
 This section will teach you the basics of the *tr* command to manipulate text. This may seem like a trivial tool but it can be useful in different scenarios. 
 
@@ -93,7 +93,7 @@ tr 'a-z' 'A-Z' <input.txt> <output.txt>
 ```
 * The above will convert all lowercase characters to uppercase ones.
 
-##sed
+## sed
 
 The sed stream editor is a useful tool to help you edit plain text files on the fly. It also allows you to view parts of files in different ways.
 
@@ -131,7 +131,7 @@ Building on the previous command the above will do the replacement only in the g
 
 These are the absolute basics of sed. It can get way more complex which includes adding regex, but there are plenty of tutorials out there. 
 
-##Grep
+## Grep
 
 Grep is a very widely known tool used for searching for patterns in files. 
 
@@ -157,7 +157,7 @@ Like most of the other items in this section grep can do much cooler things than
 
 There are a few variants of grep with some differences. The main two variants you'll see are egrep and fgrep. This are useful for specific circumstances but I'll let you read up on that. 
 
-##Sort
+## Sort
 
 Sort is a tool used for, you guessed it, sorting files. 
 
@@ -188,7 +188,7 @@ Command:
 sort -k 2 example.txt
 ```
 
-##Uniq
+## Uniq
 Uniq is used to remove duplicate lines in a file. For this we'll use a file with the contents below:
 
 ```txt
@@ -211,7 +211,7 @@ This will output the lines without the duplicates. It does not actually remove a
 * **-c** - Outputs the lines with a count of how many times it's in the document.
 * **-d** - Outputs only the repeated lines.
 
-##Cut
+## Cut
 Cut is a command to cut out parts of text and print out the result. You can choose to cut based on a specific delimiter, byte position, or a character. When using cut you have to specify an argument otherwise you will get an error (How else would it know what you're trying to cut?).
 
 ```bash
@@ -235,7 +235,7 @@ cut -d " " -f 1,2 example.txt
 ```
 You can set your own delimiter using *-d*. I the above we've set the delimiter to a space so the command effectively prints the first two words of every line in my file. 
 
-##Fmt
+## Fmt
 Fmt is a formatter for text files. This is useful when you have a very large text file that would be time consuming to format manually. 
 
 Without an option fmt will format all consecutive lines into a single line, where there is a gap it will group them.
@@ -273,7 +273,7 @@ fmt -t example.txt
 ```
 This will change the indentation of the first line, by default this means the first line is not indented but the rest are. 
 
-##Nl
+## Nl
 Nl is used to number lines in a file. This is fairly useful if you have a large file and need to know the line number of a specific part. 
 
 ```bash
@@ -286,7 +286,7 @@ nl -b a example.txt
 ```
 This will number and show all lines, even the empty ones. 
 
-##Wc
+## Wc
 
 Wc counts the number of lines, words and characters in a given file. It can count a few other things and you can see this in the options (there aren't many options in the man page so it's easy reading). 
 
