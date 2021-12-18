@@ -13,7 +13,7 @@ For the installation of the display manager you simply need to install the follo
     * nvidia-utils - For NVIDIA cards
     * catalyst-utils - For AMD cards
 
-####Display Manager
+#### Display Manager
 A display manager is a convenient way to start your X server. For this tutorial we'll be using lightdm as the manager, other options are available [here](https://wiki.archlinux.org/index.php/Display_manager). We'll also be using a greeter which is the logon screen that appears when you first turn on your PC options available for lightdm can be found [here](https://wiki.archlinux.org/index.php/LightDM); lightdm-webkit2-greeter is what we'll be using.
 
 You'll want to install the following packages:
