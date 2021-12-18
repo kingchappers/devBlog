@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Card } from "react-bootstrap"
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,7 +10,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "Projects" }}>
     <SEO title="Projects" keywords={[`gatsby`, `react`, `bootstrap`]} />
-    <Container className="text-center">
+    
       <h2>Projects</h2>
 
       <h2 style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Work in Progress</h2>
@@ -67,7 +67,7 @@ const IndexPage = () => (
           </a>
       </div>
 
-    </Container>
+
   </Layout>
 )
 

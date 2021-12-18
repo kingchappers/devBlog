@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Card } from "react-bootstrap"
+
 import { Link } from "gatsby"
 
 import Layout from "../../components/layout"
@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout pageInfo={{ pageName: "linuxConfiguration" }}>
     <SEO title="Linux Configuration" keywords={[`Linux`, `Tools`, `Bash`]} />
     
-    <Container className="text-center">
+    
       <h2>Linux Configuration</h2>
 
       <p className="text-left">
@@ -63,7 +63,7 @@ const IndexPage = () => (
         
       </div>    
 
-    </Container>
+
   </Layout>
 )
 
