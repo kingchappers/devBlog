@@ -155,6 +155,8 @@ The *-w* flag searches for full words. This differs from the previous example as
 
 Like most of the other items in this section grep can do much cooler things than what I talked about. But there are more comprehensive guides to doing that out there on the internet.
 
+There are a few variants of grep with some differences. The main two variants you'll see are egrep and fgrep. This are useful for specific circumstances but I'll let you read up on that. 
+
 ##Sort
 
 Sort is a tool used for, you guessed it, sorting files. 
