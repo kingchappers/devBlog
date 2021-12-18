@@ -271,3 +271,15 @@ fmt -t example.txt
 ```
 This will change the indentation of the first line, by default this means the first line is not indented but the rest are. 
 
+##Nl
+Nl is used to number lines in a file. This is fairly useful if you have a large file and need to know the line number of a specific part. 
+
+```bash
+nl example.txt
+```
+This will number and show the non-empty lines.
+
+```bash 
+nl -b a example.txt
+```
+This will number and show all lines, even the empty ones. 
