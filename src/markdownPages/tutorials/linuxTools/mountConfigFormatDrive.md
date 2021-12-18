@@ -6,7 +6,7 @@ title: "Mounting, Configuring and Formatting Drives"
 
 This will show you how to mount configure and format drives in Linux. This will mostly be a command based tutorial with descriptions on which command do what.
 <br/><br/>
-##Format a Drive
+## Format a Drive
 1. To list all available drives:
 ```bash
 fdisk -l
@@ -29,19 +29,19 @@ mkfs.ext4 /dev/<partition_name> -L <partition_label>
 * *-L <partition_label>* - This is where you can give it a label that you will recognise when you look at the drive again.
 <br/><br/>
 
-##Own a Drive
+## Own a Drive
 Now that you have created a drive you may want to change the ownership to your user; this will be dependant on the intended use for the drive of course. To do this use either of the below commands:
 
 ```bash
 chown sam:<usergroup> /run/media/<current_user>/<partition_label>
 ```
-#####OR
+##### OR
 ```bash
 chown sam: /run/media/<current_user>/<partition_label>
 ```
 **N.B. The second is only appropriate where you want the default user group of the user to own the drive**
 <br/><br/>
-##Write Zero's to a Drive
+## Write Zero's to a Drive
 To write 0s to a drive you'll need the dd command. After you have that use the following command:
 ```
 dd if=/dev/zero of=/dev/sdb1 status=progress

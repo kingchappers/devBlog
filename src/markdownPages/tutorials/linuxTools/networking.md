@@ -6,7 +6,7 @@ title: "Networking Tools"
 
 This will show you how to use some of the networking tools in Linux, such as ip and netctl.
 <br/><br/>
-##IP Command
+## IP Command
 **N.B. The *ipconfig* command provided by the *net-tools* package has been deprecated, and replaced by the *ip* command provided by the *iproute2* package**
 
 The *ip* command is very powerful and can do many things. This tutorial will show a basic set of functions you can use it for.
@@ -26,7 +26,7 @@ ip route add <destination_ip>/<cidr_notation> via <ip_to_go_through>
 ```
 
 <br/><br/>
-##Netctl
+## Netctl
 As above this will only show a basic subset of what is possible with netctl.
 1. List available profiles:
 ```bash

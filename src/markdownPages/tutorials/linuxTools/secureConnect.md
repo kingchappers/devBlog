@@ -5,10 +5,10 @@ title: "Secure Connections Hosts via SSH"
 ---
 This will show you the basics of securely connecting to hosts via SSH.
 <br/><br/>
-##SSH
+## SSH
 This should give you some of the basic commands required for using SSH to remote into another device. I'll also show you how to create and use SSH keys for authentication to those devices.
 
-####Connect to Client
+#### Connect to Client
 To connect to a client via ssh:
 ```bash
 ssh <username>@<ip_or_domain_name>
@@ -21,14 +21,14 @@ ssh -p <port_number> <username>@<ip_or_domain_name>
 ```
 <br/><br/>
 
-####Creating and Using SSH Keys
+#### Creating and Using SSH Keys
 Using SSH keys is generally better than a password for authentication. This is because a key is longer and more complex than a memorable password. You are also able to set passphrases on keys to add an extra layer of security if the key is stolen somehow.
 
 1. Create an SSH key on your localhost:
 ```bash
 ssh-keygen
 ```
-######OR
+###### OR
 ```bash
 ssh-keygen -b 4096
 ```
@@ -71,7 +71,7 @@ You should now be able to connect from the localhost to the host via SSH without
 **N.B. You may be prompted to enter a passphrase on connection, if you have not set one simply hit the *Enter* key**
 
 
-##SCP
+## SCP
 There are ways you can use SCP.
 
 ####Send to Host
