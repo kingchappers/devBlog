@@ -12,7 +12,7 @@ const CustomNavbar = ({ pageInfo }) => {
         <div className="justify-content container p-0" style={styles.container}>  
 
           <div className="d-none d-md-block">
-            <Link to="/" className="link-no-style">
+            <Link to="/" className="text-decoration-none">
               <div className="jumbotron jumbotron-fluid img-fluid rounded-top" style={styles.jumbo}> 
                 <div className="container">
                   <h1 className="display-1 strong" style={styles.title}>Sam Chapman .Dev</h1>
@@ -23,18 +23,18 @@ const CustomNavbar = ({ pageInfo }) => {
             <nav className="navbar navbar-dark navbar-expand rounded-bottom" style={styles.navbar}>
               <div className="navbar-collapse collapse align-items-center w-100">
                 <ul className="navbar-nav mx-auto text-center justify-content-center">
-                  <li className="nav-item nav-link col-5"><Link to="/" className="link-no-style" style={styles.title}>Home</Link></li>
-                  <li className="nav-item nav-link col-5"><Link to="/tutorials" className="link-no-style" style={styles.title}>Tutorials</Link></li>
-                  <li className="nav-item nav-link col-5"><Link to="/projects" className="link-no-style" style={styles.title}>Projects</Link></li>
-                  <li className="nav-item nav-link col-5"><Link to="/contact" className="link-no-style" style={styles.title}>Contact</Link></li>
-                  <li className="nav-item nav-link col-5"><a href="https://github.com/kingchappers" target="_blank" rel="noopener noreferrer" className="link-no-stylec" style={styles.title}>GitHub</a></li>
+                  <li className="nav-item nav-link col-5"><Link to="/" className="text-decoration-none" style={styles.title}>Home</Link></li>
+                  <li className="nav-item nav-link col-5"><Link to="/tutorials" className="text-decoration-none" style={styles.title}>Tutorials</Link></li>
+                  <li className="nav-item nav-link col-5"><Link to="/projects" className="text-decoration-none" style={styles.title}>Projects</Link></li>
+                  <li className="nav-item nav-link col-5"><Link to="/contact" className="text-decoration-none" style={styles.title}>Contact</Link></li>
+                  <li className="nav-item nav-link col-5"><a href="https://github.com/kingchappers" target="_blank" rel="noopener noreferrer" className="text-decoration-none" style={styles.title}>GitHub</a></li>
                 </ul>
               </div>            
             </nav>
           </div>
 
           <div className="d-md-none">
-            <Link to="/" className="link-no-style">
+            <Link to="/" className="text-decoration-none">
               <div className="jumbotron jumbotron-fluid img-fluid rounded-top" style={styles.jumboSmall}> 
                 <div className="container">
                   <h1 className="display-5 strong" style={styles.title}>Sam Chapman .Dev</h1>
@@ -46,10 +46,10 @@ const CustomNavbar = ({ pageInfo }) => {
             <nav className="navbar navbar-dark navbar-expand rounded-bottom" style={styles.navbar}>
               <div className="navbar-collapse collapse align-items-center w-100">
                 <ul className="navbar-nav mx-auto text-center justify-content-center">
-                  <li className="nav-item nav-link col"><Link to="/" className="link-no-style" style={styles.title}>Home</Link></li>
-                  <li className="nav-item nav-link col"><Link to="/tutorials" className="link-no-style" style={styles.title}>Tutorials</Link></li>
-                  <li className="nav-item nav-link col"><Link to="/projects" className="link-no-style" style={styles.title}>Projects</Link></li>
-                  <li className="nav-item nav-link col"><Link to="/contact" className="link-no-style" style={styles.title}>Contact</Link></li>
+                  <li className="nav-item nav-link col"><Link to="/" className="text-decoration-none" style={styles.title}>Home</Link></li>
+                  <li className="nav-item nav-link col"><Link to="/tutorials" className="text-decoration-none" style={styles.title}>Tutorials</Link></li>
+                  <li className="nav-item nav-link col"><Link to="/projects" className="text-decoration-none" style={styles.title}>Projects</Link></li>
+                  <li className="nav-item nav-link col"><Link to="/contact" className="text-decoration-none" style={styles.title}>Contact</Link></li>
                   <li className="nav-item nav-link col"><a href="https://github.com/kingchappers" target="_blank" rel="noopener noreferrer" className="link-no-stylec" style={styles.title}>GitHub</a></li>
                 </ul>
               </div>            

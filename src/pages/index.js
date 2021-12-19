@@ -16,7 +16,7 @@ const IndexPage = () => (
       <h2 class="text-center" style={{marginTop: '2rem', marginBottom: '1.5rem'}}>Work in Progress</h2>
       
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <a href="https://github.com/kingchappers/adUserProvisioner" class="text-decoration-none" style={styles.cardLink}>
+        <a href="https://github.com/kingchappers/adUserProvisioner" className="text-decoration-none" style={styles.cardLink}>
           <div class="card" style={styles.cardSize}>
             <div class="card-body">
               <h5 class="card-title">Ad User Provisioner</h5>
