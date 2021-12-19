@@ -43,7 +43,18 @@ const IndexPage = () => (
             <div class="card-body">
               <h5 class="card-title">Text Manipulation</h5>
               <p class="card-text">
-                This will show you to manipulate text using the tr command.
+                This will show you to manipulate text using different tools and commands.
+              </p>
+            </div>
+          </div>
+        </Link>
+
+        <Link to="/tutorials/linuxTools/processMonitoring" class="text-decoration-none" style={styles.cardLink}>
+          <div class="card" style={styles.cardSize}>
+            <div class="card-body">
+              <h5 class="card-title">Process Monitoring</h5>
+              <p class="card-text">
+                This will show you how to monitor processes in Linux. This is important for various monitoring and maintenance tasks when you've created your own tools.
               </p>
             </div>
           </div>
