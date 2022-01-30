@@ -60,6 +60,17 @@ const IndexPage = () => (
           </div>
         </Link>
 
+        <Link to="/tutorials/linuxTools/systemMonitoring" class="text-decoration-none" style={styles.cardLink}>
+          <div class="card" style={styles.cardSize}>
+            <div class="card-body">
+              <h5 class="card-title">System Monitoring</h5>
+              <p class="card-text">
+                Here are few different system monitoring tools and how to use them. These tools are important for monitoring your system's performance; they're similar to process monitoring tools but with more of a general focus on system health.
+              </p>
+            </div>
+          </div>
+        </Link>
+
         <Link to="/tutorials/linuxTools/mountConfigFormatDrive" class="text-decoration-none" style={styles.cardLink}>
           <div class="card" style={styles.cardSize}>
             <div class="card-body">
