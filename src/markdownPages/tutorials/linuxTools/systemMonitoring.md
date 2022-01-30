@@ -110,3 +110,63 @@ This one will show you network statistics. The keywords are:
 * **SOCK6**, **IP6**, **EIP6**, **ICMP6**, **UDP6** are for IPv6
 * **ALL** – This displays all of the above information. The output will be long.
 
+### vmstat
+vmstat will show you information about virtual memory.
+
+```bash
+vmstat
+```
+This will show you basic information. The output is divided into sections:
+* *procs* – Process Statistics
+  * *r* – Active process count.
+  * *b* – Sleeping process count.
+* *memory* – Memory statistics
+  * *swpd* – Total virtual memory. The swap space is initially unoccupied. However, the kernel starts using swap space as the system’s physical memory reaches its limit.
+  * *free* – Total free memory.
+  * *buff* – Total memory temporarily used as a data buffer.
+  * *cache* – Total cache memory.
+* *swap* – Swap space Statistics
+  * *si* – The rate of swapping-in memory from disk.
+  * *so* – The rate of swapping-out memory to disk.
+* *io* – Input/Output Statistics
+  * *bi* – Blocks received from a block device per second.
+  * *bo* – Blocks sent to a block device per second.
+* *system* – Scheduling statistics
+  * *in* – The number of system interrupts.
+  * *cs* – The number of context switches per second.
+* *cpu* – CPU Statistics
+  * *us* – The percentage of CPU time spent on non-kernel processes.
+  * *sy* – The percentage of CPU time spent on kernel processes.
+  * *id* – The percentage of idle CPU.
+  * *wa* – The percentage of CPU time spent waiting for Input/Output.
+  * *st* – The percentage of CPU time stolen by a virtual machine.
+
+The options available for vmstat are: 
+* *-a* - Displays active and inactive memory.
+* *-f* - Displays the number of forks since boot.
+* *-m* - Displays slab statistics.
+* *-n* - Displays the header only once rather than periodically.
+* *-s* - Displays a table of various event counters and memory statistics.
+* *-d* - Displays disk statistics.There are three sections for the output of this one:
+  * *Reads*:
+    * *total*: The total number of disk reads.
+    * *merged*: The total number of grouped reads.
+    * *sectors*: The total number of sectors that have been read in.
+    * *ms*: The total number of time it took to read data from the disk, in milliseconds.
+  * *Writes*:
+    * *total*: The total number of disk writes.
+    * *merged*: The total number of grouped writes.
+    * *sectors*: The total number of sectors written to.
+    * *ms*: The total number of time it took to write data to the disk, in milliseconds.
+  * *IO*:
+    * *cur*: Total current disk reads or writes.
+    * *sec*: Time spent for any in-progress reads or writes, in seconds.
+* *-D* - Detailed disk activity report.
+* *-p* - Detailed partition statistics.
+* *-t* - Adds a timestamp to the report.
+* *-S* \<unit> - Switches output units. The units you can use are:
+  * *k*: 1000 bytes.
+  * *K*: 1024 bytes.
+  * *m*: 1000000 bytes.
+  * *M*: 1048576 bytes.
+* *-V* - Displays version information.
