@@ -125,3 +125,50 @@ Changing the sort order is easy. Use the following to sort by each item:
 *c* shows the full command line argument and not just the command name. 
 
 *k* will kill a process. You'll need to type in the process ID first. You'll be able to specify a signal by name or number, the default is SIGTERM or kill.
+
+### Htop
+Htop is essentially an extended version of Top. It has a nice menu at the bottom where you can configure it yourself. Htop looks nicer than top and you don't have to memorise all of the keyboard shortcuts so it's a little easier to use if you're not sure what your doing. 
+
+### Lsof
+Lsof shows a list of open files and the processes that have them open. 
+
+```bash
+lsof
+```
+This will likely show quite a long list because a lot of files will be open by a variety of different processes. 
+
+If you want a list of open files by the user:
+
+```bash
+lsof -u <myuser>
+```
+
+If you want a list of open files excluding a specific user:
+
+```bash
+lsof -u ^<myuser>
+```
+
+If you want a list of open files by the process:
+
+```bash
+lsof -u <myProcessName>
+```
+
+or
+
+```bash
+lsof -p <myProcessID>
+```
+
+You can list files open in a specific directory: 
+
+```bash
+lsof -D <myDirectory>
+```
+
+You can also show open network connections:
+
+```bash
+lsof -i
+```
