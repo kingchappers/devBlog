@@ -31,7 +31,7 @@
     "graphql": "^15.8.0",
     "joi": "^17.6.0",
     "node-sass": "^7.0.1",
-    "prismjs": "^1.26.0",
+    "prismjs": "^1.27.0",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.1",
